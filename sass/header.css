@@ -1,0 +1,29 @@
+.header {
+  padding: 0 1.3em;
+  position: relative;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+}
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+.header__dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+.header__dropdown--close {
+  display: none;
+}
+.header__icons {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.header__icons__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+}/*# sourceMappingURL=header.css.map */
