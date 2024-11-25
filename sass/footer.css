@@ -9,7 +9,7 @@ body {
 }
 
 .footer {
-  background-image: url(../img/footerBackground.png);
+  background-image: url(../img/footer/background.png);
 }
 .footer__logo {
   margin-top: 1em;
