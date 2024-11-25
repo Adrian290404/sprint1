@@ -1,0 +1,112 @@
+@use "body";
+.footer{
+    background-image: url(../img/footerBackground.png);
+    &__logo{
+        margin-top: 1em;
+    }
+    &__introduction{
+        padding: 0 1.4em;
+        &__text{
+            color: #777777;
+            font-family: "Archivo", sans-serif;
+            font-size: 1rem;
+            line-height: 1.625rem;
+            font-weight: 400;
+        }
+        &__social-media{
+            margin-top: 2.5em;
+            &__icon{
+                padding: .5em;
+                background-color: #F8F8F8;
+                margin-right: .5em;
+                &--active{
+                    background-color: #BEAD8E;
+                }
+            }
+        }
+    }
+    &__services{
+        padding: 0 1.4em;
+        &__title{
+            color: #222222;
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 1em 0;
+        }
+        &__list{
+            position: relative;
+            &__left{
+            color: #777777;
+            list-style-type: none;
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 3rem;
+            }
+            &__right{
+                color: #777777;
+                list-style-type: none;
+                font-family: "Roboto", serif;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 3rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }        
+        }   
+    }
+    &__contact-us{
+        padding: 0 1.4em;
+        &__title{
+            color: #222222;
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 1em 0;
+        }
+        &__phone{
+            position: relative;
+            margin: 2em 0 3em 0;
+            &--last{
+                margin: 2em 0 2em 0;
+            }
+            &__text-container{
+                position: absolute;
+                top:0;
+                left: 4em;
+                &__title{
+                    color: #222222;
+                    font-family: "Old Standard TT", serif;
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                }
+                &__subtitle{
+                    color: #777777;
+                    font-family: "Roboto", serif;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+    }
+    &__terms-of-use{
+        background-color: #F8F8F8;
+        padding: 1em 1.3em;
+        &__text{
+            color: #222222;
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.125rem;
+            &--copyright{
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+}

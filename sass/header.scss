@@ -1,3 +1,4 @@
+@use "body";
 .header {
     padding: 0 1.3em;
     position: relative;
@@ -24,6 +25,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-left: 1em;
+            cursor: pointer;
         }
     }
 }

@@ -1,3 +1,13 @@
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
 .header {
   padding: 0 1.3em;
   position: relative;
@@ -26,4 +36,5 @@
   display: inline-block;
   vertical-align: middle;
   margin-left: 1em;
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */
