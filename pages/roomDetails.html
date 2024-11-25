@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room details</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="room-details">
+        <section class="room-details__introduction">
+            <h2 class="room-details__introduction__up">THE ULTIMATE LUXURY</h2>
+            <h1 class="room-details__introduction__title">Ultimate Room</h1>
+            <div class="room-details__introduction__page-marker">
+                <h3 class="room-details__introduction__page-marker__text">Home | <span class="room-details__introduction__page-marker__text room-details__introduction__page-marker__text--marked">Room Details</span></h3>
+            </div>
+        </section>
+        <section class="room-details__double-bed">
+            <h2 class="room-details__double-bed__up">DOUBLE BED</h2>
+            <h1 class="room-details__double-bed__title">Luxury Double Bed</h1>
+            <p class="room-details__double-bed__price">$345<span class="room-details__double-bed__little">/Night</span></p>
+            <img class="room-details__double-bed__image" src="../img/roomDetails/empty/rectangle.png">
+            <h4 class="room-details__double-bed__form-title">Check Availability</h4>
+            <form class="room-details__double-bed__form">
+                <label class="room-details__double-bed__form__label" for="date-start">Arrival Date:</label>
+                <input class="room-details__double-bed__form__input" type="date" id="date-start" name="date-start" value="2020-06-14">
+                <label class="room-details__double-bed__form__label" for="date-end">Departure Date:</label>
+                <input class="room-details__double-bed__form__input" type="date" id="date-end" name="date-end" value="2020-06-16">
+                <button class="room-details__double-bed__form__button" type="submit">CHECK AVAILABILITY</button>
+            </form>
+            <p class="room-details__double-bed__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </section>
+        <section class="room-details__amenities">
+            <h2 class="room-details__amenities__title">Amenities</h2>
+            <hr class="room-details__amenities__line">
+            <ul class="room-details__amenities__left">
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/air.png"> Air conditioner</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/breakfast.png"> Breakfast</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/cleaning.png"> Cleaning</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/grocery.png"> Grocery</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/shop.png"> Shop near</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/support.png"> 24/7 Online Support</li>
+                <li><img class="room-details__amenities__left__icon" src="../img/roomDetails/icons/security.png"> Smart Security</li>
+            </ul>
+            <ul class="room-details__amenities__right">
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/wifi.png"> High speed WiFi</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/kitchen.png"> Kitchen</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/shower.png"> Shower</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/singleBed.png"> Single bed</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/towels.png"> Towels</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/locker.png"> Strong Locker</li>
+                <li><img class="room-details__amenities__right__icon" src="../img/roomDetails/icons/expertTeam.png"> Expert Team</li>
+            </ul>
+            <article class="room-details__amenities__profile">
+                <img class="room-details__amenities__profile__image" src="../img/roomDetails/empty/rectangle.png">
+                <div class="room-details__amenities__profile__tick-container">
+                    <img class="room-details__amenities__profile__tick-container__tick" src="../img/roomDetails/icons/tick.png">
+                </div>
+                <h3 class="room-details__amenities__profile__name">Rosalina D. William</h3>
+                <h4 class="room-details__amenities__profile__position">Founder, Qux Co.</h4>
+                <p class="room-details__amenities__profile__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </article>
+        </section>
+        <section class="room-details__cancellation">
+            <h2 class="room-details__canellation__title">Cancellation</h2>
+            <hr class="room-details__cancellation__line">
+            <p class="room-details__cancellation__description">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.</p>
+        </section>
+        <section class="room-details__related-rooms">
+            <h2 class="room-details__related-rooms__title">Related Rooms</h2>
+            <hr class="room-details__related-rooms__line">
+            <article class="room-details__related-rooms__container">
+                <div class="room-details__related-rooms__container__slider">
+                    <img class="room-details__related-rooms__container__slider__controller room-details__related-rooms__container__slider__controller--left" src="../img/home/icons/left.png">
+                    <img class="room-details__related-rooms__container__slider__controller room-details__related-rooms__container__slider__controller--right" src="../img/home/icons/right.png">
+                    <img class="room-details__related-rooms__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+                </div>
+                <div class="room-details__related-rooms__container__icons-container">
+                    <img class="room-details__related-rooms__container__icons-container__icons" src="../img/home/icons/roomIcons.png">
+                </div>
+                <div class="room-details__related-rooms__container__info">
+                    <h3 class="room-details__related-rooms__container__info__title">Minimal Duplex Room</h3>
+                    <p class="room-details__related-rooms__container__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p class="room-details__related-rooms__details-price">$345/Night</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+    </script>
+</body>
+</html>
