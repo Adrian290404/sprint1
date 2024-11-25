@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="rooms">
+        <section class="rooms__introduction">
+            <h2 class="rooms__introduction__up">THE ULTIMATE LUXURY</h2>
+            <h1 class="rooms__introduction__title">Ultimate Room</h1>
+            <div class="rooms__introduction__page-marker">
+                <h3 class="rooms__introduction__page-marker__text">Home | <span class="about-us__introduction__page-marker__text about-us__introduction__page-marker__text--marked">Rooms</span></h3>
+            </div>
+        </section>
+        <section class="rooms__rooms-info">
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <article class="rooms__rooms-info__room">
+                <img class="rooms__rooms-info__room__image" src="../img/about/empty/rectangle.png">
+                <img class="rooms__rooms-info__room__icons" src="../img/home/icons/roomIcons.png">
+                <h3 class="rooms__rooms-info__room__title">Minimal Duplex Room</h3>
+                <p class="rooms__rooms-info__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p class="rooms__rooms-info__room__price">$345/Night</p>
+                <p class="rooms__rooms-info__room__book">Booking Now</p>
+            </article>
+            <div class="rooms__rooms-info__controls">
+                <img class="rooms__rooms-info__controls__arrow" src="../img/rooms/icons/left.png">
+                <button class="rooms__rooms-info__controls__number">1</button>
+                <button class="rooms__rooms-info__controls__number">2</button>
+                <button class="rooms__rooms-info__controls__number">3</button>
+                <button class="rooms__rooms-info__controls__number">...</button>
+                <button class="rooms__rooms-info__controls__number">10</button>
+                <img class="rooms__rooms-info__controls__arrow" src="../img/rooms/icons/right.png">
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+    </script>
+</body>
+</html>
