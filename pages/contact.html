@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="contact">
+        <section class="contact__introduction">
+            <h2 class="contact__introduction__up">THE ULTIMATE LUXURY</h2>
+            <h1 class="contact__introduction__title">New Details</h1>
+            <div class="contact__introduction__page-marker">
+                <h3 class="contact__introduction__page-marker__text">Home | <span class="contact__introduction__page-marker__text contact__introduction__page-marker__text--marked">Blog</span></h3>
+            </div>
+        </section>
+        <section class="contact__details-container">
+            <article class="contact__details-container__detail">
+                <img class="contact__details-container__detail__icon" src="../img/footer/icons/phoneNumber3.png">
+                <h3 class="contact__details-container__detail__title">Hotel Address</h3>
+                <p class="contact__details-container__detail__description">19/A, Cirikon City hall Tower New York, NYC</p>
+                <p class="contact__details-container__detail__number">01</p>
+            </article>
+            <article class="contact__details-container__detail">
+                <img class="contact__details-container__detail__icon" src="../img/footer/icons/phoneNumber1.png">
+                <h3 class="contact__details-container__detail__title">Phone Number</h3>
+                <p class="contact__details-container__detail__description">+ 97656 8675 7864 7<br>+ 876 766 8675 765 6</p>
+                <p class="contact__details-container__detail__number">02</p>
+            </article>
+            <article class="contact__details-container__detail">
+                <img class="contact__details-container__detail__icon" src="../img/footer/icons/phoneNumber2.png">
+                <h3 class="contact__details-container__detail__title">Email</h3>
+                <p class="contact__details-container__detail__description">info@webmail.com<br>jobs.webmail@mail.com</p>
+                <p class="contact__details-container__detail__number">03</p>
+            </article>
+            <img class="contact__details-container__image" src="../img/contact/empty/rectangle.png">
+        </section>
+        <section class="contact__form-container">
+            <form class="contact__form-container__form">
+                <div class="contact__form-container__form__input-container">
+                    <img class="contact__form-container__form__input-container__icon" src="../img/contact/icons/name.png">
+                    <input class="contact__form-container__form__input-container__input" type="text" placeholder="Your full name">
+                </div>
+                <div class="contact__form-container__form__input-container">
+                    <img class="contact__form-container__form__input-container__icon" src="../img/contact/icons/phone.png">
+                    <input class="contact__form-container__form__input-container__input" type="text" placeholder="Add phone number">
+                </div>
+                <div class="contact__form-container__form__input-container">
+                    <img class="contact__form-container__form__input-container__icon" src="../img/contact/icons/email.png">
+                    <input class="contact__form-container__form__input-container__input" type="text" placeholder="Enter email address">
+                </div>
+                <div class="contact__form-container__form__input-container">
+                    <img class="contact__form-container__form__input-container__icon" src="../img/contact/icons/subject.png">
+                    <input class="contact__form-container__form__input-container__input" type="text" placeholder="Enter subject">
+                </div>
+                <div class="contact__form-container__form__input-container">
+                    <img class="contact__form-container__form__input-container__icon" src="../img/contact/icons/message.png">
+                    <input class="contact__form-container__form__input-container__input" type="text" placeholder="Enter message">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+    </script>
+</body>
+</html>
