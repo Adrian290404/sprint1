@@ -489,6 +489,10 @@ body {
   right: 1em;
   background-color: #BDAC8D;
 }
+.home__rooms__container__slider__image {
+  width: 100%;
+  height: auto;
+}
 .home__rooms__container__info {
   position: relative;
   background-color: rgb(255, 255, 255);
@@ -520,8 +524,4 @@ body {
 }
 .home__rooms__container__info__price--little {
   font-size: 0.8125rem;
-}
-
-.home {
-  background-color: #FFFFFF;
 }/*# sourceMappingURL=home.css.map */
