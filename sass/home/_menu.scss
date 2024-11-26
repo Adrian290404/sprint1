@@ -1,0 +1,83 @@
+.home__menu{
+    &__icon{
+        display: block;
+        margin-left: auto;
+    }
+    &__container{
+        padding: 0 1em;
+        &__up{
+            color: #777777;
+            font-family: "Archivo", sans-serif;
+            font-size: 0.8125rem;
+            line-height: 0.9375rem;
+            font-weight: 700;
+            letter-spacing: 0.125rem;
+        }
+        &__title{
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.0625rem;
+            margin: .4em 0 .6em 0;
+        }
+        &__menu-container{
+            &__food-container{
+                display: flex;
+                align-items: start;
+                margin-bottom: 2em;
+                &__image{
+                    width: 40%;
+                    height: auto;
+                    margin-right: 1em;
+                }
+                &__text{
+                    color: #222222;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    &__title{
+                        font-family: "Old Standard TT", serif;
+                        font-size: 1.5rem;
+                        letter-spacing: -0.72px;
+                        margin: 0 0 0.5em 0;
+                    }
+                    &__description{
+                        font-family: "Roboto", sans;
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+            &__controls{
+                text-align: right;
+                &__controller{
+                    padding: .9em 1em;
+                    cursor: pointer;
+                    &--left{
+                        background-color: #F8F8F8;
+                        margin-right: .8em;
+                    }
+                    &--right{
+                        background-color: #BDAC8D;
+                    }
+                }
+            }
+        }
+    }
+    &__slider{
+        text-align: center;
+        padding-bottom: 3em;
+        &__image{
+            width: 90%;
+            height: auto;
+            margin: 4em 0 1em 0;
+        }
+        &__buttons{
+            &__button{
+                margin: 0 .1em;
+                cursor: pointer;
+            }
+        }
+    }
+}

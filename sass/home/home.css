@@ -178,7 +178,7 @@ body {
 
 .home__facilities {
   text-align: center;
-  padding: 4em 1em;
+  padding: 4em 1em 3em 1em;
 }
 .home__facilities__up {
   color: #777777;
@@ -331,6 +331,84 @@ body {
   margin-top: 2em;
   background-color: #BEAD8E;
   border: none;
+  cursor: pointer;
+}
+
+.home__menu__icon {
+  display: block;
+  margin-left: auto;
+}
+.home__menu__container {
+  padding: 0 1em;
+}
+.home__menu__container__up {
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+.home__menu__container__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.4em 0 0.6em 0;
+}
+.home__menu__container__menu-container__food-container {
+  display: flex;
+  align-items: start;
+  margin-bottom: 2em;
+}
+.home__menu__container__menu-container__food-container__image {
+  width: 40%;
+  height: auto;
+  margin-right: 1em;
+}
+.home__menu__container__menu-container__food-container__text {
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.home__menu__container__menu-container__food-container__text__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.72px;
+  margin: 0 0 0.5em 0;
+}
+.home__menu__container__menu-container__food-container__text__description {
+  font-family: "Roboto", sans;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.home__menu__container__menu-container__controls {
+  text-align: right;
+}
+.home__menu__container__menu-container__controls__controller {
+  padding: 0.9em 1em;
+  cursor: pointer;
+}
+.home__menu__container__menu-container__controls__controller--left {
+  background-color: #F8F8F8;
+  margin-right: 0.8em;
+}
+.home__menu__container__menu-container__controls__controller--right {
+  background-color: #BDAC8D;
+}
+.home__menu__slider {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.home__menu__slider__image {
+  width: 90%;
+  height: auto;
+  margin: 4em 0 1em 0;
+}
+.home__menu__slider__buttons__button {
+  margin: 0 0.1em;
   cursor: pointer;
 }
 
