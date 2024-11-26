@@ -1,1 +1,49 @@
-/*# sourceMappingURL=roomDetails.css.map */
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.introduction {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 4em 1em 0 1em;
+}
+.introduction__up {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.125rem;
+}
+.introduction__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.3em 0 0.5em 0;
+}
+.introduction__container {
+  text-align: right;
+  display: block;
+}
+.introduction__container__page-marker {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+  letter-spacing: 0.48px;
+  padding: 1em 2em;
+  display: inline-block;
+}
+.introduction__container__page-marker--marked {
+  color: #BEAD8E;
+  padding: 0;
+}/*# sourceMappingURL=roomDetails.css.map */
