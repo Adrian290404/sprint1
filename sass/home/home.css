@@ -228,10 +228,10 @@ body {
   width: 80%;
   margin: 2em 0;
 }
-.home__facilities__container__buttons {
+.home__facilities__buttons {
   text-align: center;
 }
-.home__facilities__container__buttons__button {
+.home__facilities__buttons__button {
   margin: 0 0.1em;
   cursor: pointer;
 }

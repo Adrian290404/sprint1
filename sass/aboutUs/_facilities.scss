@@ -1,8 +1,9 @@
-.home__facilities{
+.about-us__facilities{
+    background-color: #222222;
+    color: #FFFFFF;
     text-align: center;
-    padding: 4em 1em 3em 1em;
+    padding: 4em 1em 2.5em 1em;
     &__up{
-        color: #777777;
         font-family: "Archivo", sans-serif;
         font-size: 0.8125rem;
         line-height: 0.9375rem;
@@ -18,10 +19,11 @@
         margin: .4em 0;
     }
     &__container{
+        background-color: #292929;
         text-align: left;
-        padding: 0 1em;
+        padding: 0 1em 4em 1em;
         &__number{
-            color: #2222220A;
+            color: #222222;
             font-family: "Archivo", sans-serif;
             font-size: 7.5rem;
             line-height: 8.125rem;
@@ -40,17 +42,17 @@
             letter-spacing: -0.9px;
         }
         &__description{
-            color: #777777;
             font-family: "Archivo", sans-serif;
             font-weight: 400;
             font-size: 0.875rem;
             line-height: 1.375rem;
             width: 80%;
-            margin: 2em 0;
+            margin: 2em 0 0 0;
         }
     }
     &__buttons{
         text-align: center;
+        margin-top: 1em;
         &__button{
             margin: 0 .1em;
             cursor: pointer;

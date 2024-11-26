@@ -48,6 +48,68 @@ body {
   padding: 0;
 }
 
+.about-us__facilities {
+  background-color: #222222;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4em 1em 2.5em 1em;
+}
+.about-us__facilities__up {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+.about-us__facilities__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.4em 0;
+}
+.about-us__facilities__container {
+  background-color: #292929;
+  text-align: left;
+  padding: 0 1em 4em 1em;
+}
+.about-us__facilities__container__number {
+  color: #222222;
+  font-family: "Archivo", sans-serif;
+  font-size: 7.5rem;
+  line-height: 8.125rem;
+  font-weight: 700;
+  text-align: right;
+}
+.about-us__facilities__container__icon {
+  display: block;
+  margin: -2.5em auto 3em 0;
+}
+.about-us__facilities__container__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+}
+.about-us__facilities__container__description {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  width: 80%;
+  margin: 2em 0 0 0;
+}
+.about-us__facilities__buttons {
+  text-align: center;
+  margin-top: 1em;
+}
+.about-us__facilities__buttons__button {
+  margin: 0 0.1em;
+  cursor: pointer;
+}
+
 .about-us__general-info {
   padding: 3.5em 1em;
   text-align: center;
