@@ -216,6 +216,65 @@ body {
   border: 2px solid #BEAD8E;
 }
 
+.home__intro-video {
+  padding: 4em 1em 3em 1em;
+  background-color: #222222;
+}
+.home__intro-video__up {
+  color: #BDAC8D;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.125rem;
+}
+.home__intro-video__title {
+  color: #FFFFFF;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.6em 0 0.4em 0;
+}
+.home__intro-video__description {
+  color: #C2C2C2;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin: 1em auto;
+  width: 98%;
+}
+.home__intro-video__video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 2em 0;
+}
+.home__intro-video__video-container__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.home__intro-video__button {
+  display: block;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.125rem;
+  padding: 1.5em 4em;
+  margin-top: 2em;
+  background-color: #BEAD8E;
+  border: none;
+  cursor: pointer;
+}
+
 .home__rooms {
   padding: 4em 0 2em 0;
   text-align: center;
