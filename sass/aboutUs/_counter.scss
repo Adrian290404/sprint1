@@ -1,0 +1,67 @@
+.about-us__counter{
+    padding: 4em 1em 2em 1em;
+    &__up{
+        color: #777777;
+        font-family: "Archivo", sans-serif;
+        font-size: 0.8125rem;
+        line-height: 0.9375rem;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
+        text-align: left;
+    }
+    &__title{
+        color: #222222;
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        letter-spacing: -0.0625rem;
+        margin: .4em 0 .9em 0
+    }
+    &__facts-container{
+        &__fact{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            justify-content: space-evenly;
+            margin-bottom: 3.5em;
+            &__image{
+                width: 4em;
+                height: auto;
+                object-fit: cover;
+            }
+            &__content {
+                display: flex; 
+                flex-direction: column;
+                align-items: start; 
+                width: 50%;
+                &__title {
+                    font-family: "Old Standard TT", serif;
+                    font-weight: 400;
+                    font-size: 3.75rem;
+                    line-height: 3.75rem;
+                    letter-spacing: -0.0625rem;
+                }
+                &__description {
+                    color: #777777;
+                    font-family: "Roboto", sans;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+    }
+    &__slider{
+        text-align: center;
+        &__image{
+            width: 100%;
+            height: auto;
+        }
+        &__buttons{
+            &__button{
+                margin: 0 .1em;
+            }
+        }
+    }
+}

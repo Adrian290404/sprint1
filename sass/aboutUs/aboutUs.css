@@ -48,6 +48,71 @@ body {
   padding: 0;
 }
 
+.about-us__counter {
+  padding: 4em 1em 2em 1em;
+}
+.about-us__counter__up {
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-align: left;
+}
+.about-us__counter__title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.4em 0 0.9em 0;
+}
+.about-us__counter__facts-container__fact {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-evenly;
+  margin-bottom: 3.5em;
+}
+.about-us__counter__facts-container__fact__image {
+  width: 4em;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us__counter__facts-container__fact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+}
+.about-us__counter__facts-container__fact__content__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+}
+.about-us__counter__facts-container__fact__content__description {
+  color: #777777;
+  font-family: "Roboto", sans;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.about-us__counter__slider {
+  text-align: center;
+}
+.about-us__counter__slider__image {
+  width: 100%;
+  height: auto;
+}
+.about-us__counter__slider__buttons__button {
+  margin: 0 0.1em;
+}
+
 .about-us__facilities {
   background-color: #222222;
   color: #FFFFFF;
