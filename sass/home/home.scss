@@ -1,9 +1,13 @@
-@use "body";
-@use "home/aboutUs.scss";
-@use "home/calendar.scss";
-@use "home/facilities.scss";
-@use "home/information.scss";
-@use "home/introduction.scss";
-@use "home/introVideo.scss";
-@use "home/menu.scss";
-@use "home/rooms.scss";
+@use "../body";
+@use "aboutUs.scss";
+@use "calendar.scss";
+@use "facilities.scss";
+@use "information.scss";
+@use "introduction.scss";
+@use "introVideo.scss";
+@use "menu.scss";
+@use "rooms.scss";
+
+.home{
+    background-color: #FFFFFF;
+}
