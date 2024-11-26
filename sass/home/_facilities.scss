@@ -1,0 +1,58 @@
+.home__facilities{
+    text-align: center;
+    padding: 4em 1em;
+    &__up{
+        color: #777777;
+        font-family: "Archivo", sans-serif;
+        font-size: 0.8125rem;
+        line-height: 0.9375rem;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
+    }
+    &__title{
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        letter-spacing: -0.0625rem;
+        margin: .4em 0;
+    }
+    &__container{
+        text-align: left;
+        padding: 0 1em;
+        &__number{
+            color: #2222220A;
+            font-family: "Archivo", sans-serif;
+            font-size: 7.5rem;
+            line-height: 8.125rem;
+            font-weight: 700;
+            text-align: right;
+        }
+        &__icon{
+            display: block;
+            margin: -2.5em auto 3em 0;
+        }
+        &__title{
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+            letter-spacing: -0.9px;
+        }
+        &__description{
+            color: #777777;
+            font-family: "Archivo", sans-serif;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            width: 80%;
+            margin: 2em 0;
+        }
+        &__buttons{
+            text-align: center;
+            &__button{
+                margin: 0 .1em;
+            }
+        }
+    }
+}
