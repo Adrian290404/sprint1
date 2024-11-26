@@ -1,0 +1,29 @@
+.home__information{
+    background-color: #222222;
+    padding: 4em 0;
+    &__container{
+        margin-top: 4em;
+        text-align: center;
+        &--first{
+            margin-top: 0;
+        }
+        &__number{
+            color: #FFFFFF;
+            font-family: "Roboto", sans;
+            font-weight: 700;
+            font-size: 3.75rem;
+            line-height: 5.0625rem;
+            &--little{
+                font-size: 1rem;
+                line-height: 1.3125rem;
+            }
+        }
+        &__description{
+            color: #999999;
+            font-family: "Roboto", sans;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.3125rem;
+        }
+    }
+}
