@@ -1,0 +1,38 @@
+.home__introduction{
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 4em 1em;
+    &__up{
+        font-family: "Archivo", sans-serif;
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
+        width: 60%;
+    }
+    &__title{
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        letter-spacing: -0.0625rem;
+        margin: .7em 0 .8em 0;
+    }
+    &__button{
+        display: block;
+        color: #FFFFFF;
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
+        letter-spacing: 0.125rem;
+        padding: 1em 2.5em;
+        background-color: transparent;
+        border: 2px solid #FFFFFF54;
+        cursor: pointer;
+        &--gold{
+            background-color: #BEAD8E;
+            margin-bottom: 1.5em;
+        }
+    }  
+}

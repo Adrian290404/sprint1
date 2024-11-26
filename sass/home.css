@@ -1,0 +1,99 @@
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.home__calendar {
+  background-color: #222222;
+  color: #FFFFFF;
+  padding: 2em 1em;
+}
+.home__calendar__form__label {
+  display: block;
+  font-family: "Roboto", sans;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  margin-top: 0.5em;
+}
+.home__calendar__form__input-container {
+  display: inline-block;
+  border-bottom: 1px solid #BEAD8E;
+  margin: 1em 0;
+  padding-bottom: 0.6em;
+  width: 100%;
+}
+.home__calendar__form__input-container__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.home__calendar__form__input-container__input {
+  color: #686868;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Roboto", sans;
+  font-weight: 400;
+  line-height: 1rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 0.3em;
+}
+.home__calendar__form__button {
+  display: block;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.125rem;
+  padding: 1em 2.5em;
+  margin-top: 2em;
+  background-color: #BEAD8E;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  cursor: pointer;
+}
+
+.home__introduction {
+  color: #FFFFFF;
+  background-color: #333333;
+  padding: 4em 1em;
+}
+.home__introduction__up {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  width: 60%;
+}
+.home__introduction__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.7em 0 0.8em 0;
+}
+.home__introduction__button {
+  display: block;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.125rem;
+  padding: 1em 2.5em;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  cursor: pointer;
+}
+.home__introduction__button--gold {
+  background-color: #BEAD8E;
+  margin-bottom: 1.5em;
+}/*# sourceMappingURL=home.css.map */
