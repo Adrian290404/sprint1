@@ -46,4 +46,52 @@ body {
 .introduction__container__page-marker--marked {
   color: #BEAD8E;
   padding: 0;
+}
+
+.contact__details-container {
+  padding: 0 1em;
+}
+.contact__details-container__detail {
+  position: relative;
+  padding-top: 1em;
+}
+.contact__details-container__detail__icon {
+  position: absolute;
+  top: 32%;
+  left: 8%;
+}
+.contact__details-container__detail__text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -62%);
+  width: 50%;
+}
+.contact__details-container__detail__text-container__title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+.contact__details-container__detail__text-container__description {
+  color: #777777;
+  font-family: "Roboto", sans;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin-top: 1.5em;
+}
+.contact__details-container__detail__number {
+  text-align: right;
+  color: #F8F8F8;
+  font-family: "Roboto", sans;
+  font-weight: 700;
+  font-size: 12.5rem;
+  line-height: 14.625rem;
+  letter-spacing: -0.375rem;
+}
+.contact__details-container__image {
+  margin-top: 2em;
+  width: 100%;
 }/*# sourceMappingURL=contact.css.map */
