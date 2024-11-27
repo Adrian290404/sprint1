@@ -1,0 +1,51 @@
+.contact__form-container{
+    padding: 3em 1em 4em 1em;
+    &__form{
+        &__input-container {
+            display: inline-block; 
+            padding: 1em 1em;
+            background-color: #F8F8F8;
+            margin-top: 1em;
+            width: 100%;
+            &__icon {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &__input {
+                display: inline-block;
+                vertical-align: middle;
+                color: #686868;
+                width: 88%;
+                font-family: "Roboto", sans;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1rem;
+                border: none;
+                background-color: transparent;
+                outline: none;
+                margin-left: .8em;
+                &--textarea {
+                    vertical-align: top;
+                    height: 8em; 
+                    resize: none;
+                    margin-top: .2em; 
+                }
+            }
+        }
+    }
+    &__button {
+        width: 80%;
+        display: block;
+        color: #FFFFFF;
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
+        letter-spacing: 0.125rem;
+        padding: 1.5em 0;
+        background-color: #BEAD8E;
+        border: none;
+        cursor: pointer;
+        margin: 3em auto 0 auto;
+    }
+}
