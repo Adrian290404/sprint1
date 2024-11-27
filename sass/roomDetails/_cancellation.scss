@@ -1,0 +1,21 @@
+.room-details__cancellation{
+    padding: 0 1em 5em 1em;
+    &__title{
+        color: #222222;
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+    }
+    &__line{
+        border: none;
+        border-top: 1px solid #F1F1F1;
+        margin: 1em 0 2em 0;
+    }
+    &__description{
+        color: #777777;
+        font-family: "Roboto", sans;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
