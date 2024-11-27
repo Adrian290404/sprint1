@@ -1,0 +1,113 @@
+.offers__offert{
+    margin-top: 3em;
+    padding: 0 1em;
+    &__box-shadow{
+        &__image-container{
+            position: relative;
+            &__image{
+                width: 100%;
+            }
+            &__prev-price-container{
+                    position: absolute;
+                    right: 1.8em;
+                    bottom: 3.5em;
+                &__previous-price{
+                    display: inline;
+                    color: #BEAD8E;
+                    font-family: "Archivo", sans-serif;
+                    font-weight: 700;
+                    font-size: 1.4375rem;
+                    line-height: 1.5625rem;
+                    text-decoration: line-through;
+                    &--little{
+                        color: #BEAD8E;
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 700;
+                        font-size: 0.6875rem;
+                        line-height: 0.6875rem;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            &__current-price{
+                position: absolute;
+                right: 1em;
+                bottom: .5em;
+                color: #DE5777;
+                font-family: "Archivo", sans-serif;
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 2rem;
+                &--little{
+                    font-size: 0.75rem;
+                    line-height: 0.8125rem;
+                }
+            }
+        }
+        &__content{
+            box-shadow: 0px 14px 24px 0px #B8B8B81A;
+            padding: 0 1em 2em 1em;
+            &__up{
+                color: #777777;
+                font-family: "Archivo", sans-serif;
+                font-size: 0.8125rem;
+                line-height: 0.9375rem;
+                font-weight: 700;
+                letter-spacing: 0.125rem;
+            }
+            &__title{
+                color: #222222;
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 2.5rem;
+                line-height: 3.0625rem;
+                letter-spacing: -0.0625rem;
+                margin: .4em 0;
+            }
+            &__description{
+                color: #777777;
+                font-family: "Archivo", sans-serif;
+                font-size: 0.8125rem;
+                line-height: 1.25rem;
+                font-weight: 400;
+                width: 86%;
+            }
+            &__container{
+                position: relative;
+                margin: 1em 0;
+                &__left{
+                color: #777777;
+                list-style-type: none;
+                font-family: "Roboto", serif;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 3rem;
+                }
+                &__right{
+                    color: #777777;
+                    list-style-type: none;
+                    font-family: "Roboto", serif;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 3rem;
+                    position: absolute;
+                    top: 0;
+                    right: 2.5em;
+                }        
+            }
+            &__button{
+                display: block;
+                color: #FFFFFF;
+                font-family: "Archivo", sans-serif;
+                font-weight: 700;
+                font-size: 0.875rem;
+                line-height: 0.9375rem;
+                letter-spacing: 0.125rem;
+                padding: 1.5em 4.5em;
+                background-color: #BEAD8E;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
