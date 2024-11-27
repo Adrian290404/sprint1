@@ -1,0 +1,82 @@
+.room-details__amenities{
+    padding: 1em 1em 6em 1em;
+    &__title{
+        color: #222222;
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+    }
+    &__line{
+        border: none;
+        border-top: 1px solid #F1F1F1;
+        margin: 1em 0 2em 0;
+    }
+    &__container{
+        position: relative;
+        &__left{
+        color: #777777;
+        list-style-type: none;
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 3rem;
+        }
+        &__right{
+            color: #777777;
+            list-style-type: none;
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 3rem;
+            position: absolute;
+            top: 0;
+            right: 1em;
+        }        
+    }
+    &__profile{
+        text-align: center;
+        &__image{
+            margin: 5em 0 2em 0;
+            position: relative;
+            &__picture{
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+            }
+            &__tick{
+                background-color: #BDAC8D;
+                padding: .8em .7em;
+                border: 4px solid #FFFFFF;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(75%);
+            }
+        }
+        &__name{
+            color: #222222;
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+            letter-spacing: -0.9px;
+        }
+        &__position{
+            color: #BDAC8D;
+            font-family: "Archivo", sans-serif;
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 0.9375rem;
+            letter-spacing: 0.125rem;
+            margin: 1em 0;
+        }
+        &__description{
+            color: #777777;
+            font-family: "Archivo", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
