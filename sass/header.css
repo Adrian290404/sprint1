@@ -19,12 +19,18 @@ body {
 .header__container__card__navbar {
   display: none;
 }
-.header__container__card__logo {
+.header__container__card__navbar__link {
+  text-decoration: none;
+}
+.header__container__card__navbar__link__page {
+  color: #111111;
+}
+.header__container__card__link__logo {
   display: inline-block;
   vertical-align: middle;
   margin-right: 1em;
 }
-.header__container__card__logo--desktop {
+.header__container__card__link__logo--desktop {
   display: none;
 }
 .header__container__card__dropdown {
@@ -76,10 +82,10 @@ body {
   .header__container__card__dropdown {
     display: none;
   }
-  .header__container__card__logo--mobile {
+  .header__container__card__link__logo--mobile {
     display: none;
   }
-  .header__container__card__logo--desktop {
+  .header__container__card__link__logo--desktop {
     display: inline;
     width: 200px;
     margin-right: 2em;
@@ -88,7 +94,7 @@ body {
     list-style-type: none;
     display: inline;
   }
-  .header__container__card__navbar__page {
+  .header__container__card__navbar__link__page {
     display: inline;
     font-family: "Archivo", sans-serif;
     font-weight: 600;

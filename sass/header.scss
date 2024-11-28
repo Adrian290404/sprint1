@@ -10,13 +10,21 @@
         &__card{
             &__navbar{
                 display: none;
+                &__link{
+                    text-decoration: none;
+                    &__page{
+                        color: #111111;
+                    }
+                }
             }
-            &__logo {
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 1em;
-                &--desktop{
-                    display: none;
+            &__link{
+                &__logo {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 1em;
+                    &--desktop{
+                        display: none;
+                    }
                 }
             }
             &__dropdown {
@@ -66,26 +74,30 @@
                 &__dropdown {
                     display: none;
                 }
-                &__logo {
-                    &--mobile{
-                        display: none;
-                    }
-                    &--desktop{
-                        display: inline;
-                        width: 200px;
-                        margin-right: 2em;
-                    }
+                &__link{
+                    &__logo {
+                        &--mobile{
+                            display: none;
+                        }
+                        &--desktop{
+                            display: inline;
+                            width: 200px;
+                            margin-right: 2em;
+                        }
+                    }        
                 }
                 &__navbar{
                     list-style-type: none;
                     display: inline;
-                    &__page{
-                        display: inline;
-                        font-family: "Archivo", sans-serif;
-                        font-weight: 600;
-                        font-size: 1rem;
-                        line-height: 1.0625rem;
-                        margin-left: 4%;
+                    &__link{
+                        &__page{
+                            display: inline;
+                            font-family: "Archivo", sans-serif;
+                            font-weight: 600;
+                            font-size: 1rem;
+                            line-height: 1.0625rem;
+                            margin-left: 4%;
+                        }
                     }
                 }
                 &__icons {
