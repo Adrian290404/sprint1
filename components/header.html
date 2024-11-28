@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link rel="stylesheet" href="../sass/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <img class="header__dropdown header__dropdown--open" src="../img/header/icons/dropdown.png">
-        <img class="header__dropdown header__dropdown--close" src="../img/header/icons/closeDropdown.png">
-        <img class="header__logo" src="../img/header/logo.png">
-        <section class="header__icons">
-            <img class="header__icons__icon" src="../img/header/icons/login.png">
-            <img class="header__icons__icon" src="../img/header/icons/search.png">
-        </section>
+        <div class="header__container">
+            <p class="header__container__upper-text">We Make Your Feel Comfortable</p>
+            <nav class="header__container__card">
+                <img class="header__container__card__dropdown header__container__card__dropdown--open" src="../img/header/icons/dropdown.png">
+                <img class="header__container__card__dropdown header__container__card__dropdown--close" src="../img/header/icons/closeDropdown.png">
+                <img class="header__container__card__logo header__container__card__logo--mobile" src="../img/header/logo.png">
+                <img class="header__container__card__logo header__container__card__logo--desktop" src="../img/header/logoDesktop.png">
+                <ul class="header__container__card__navbar">
+                    <li class="header__container__card__navbar__page">About Us</li>
+                    <li class="header__container__card__navbar__page">Rooms</li>
+                    <li class="header__container__card__navbar__page">Offers</li>
+                    <li class="header__container__card__navbar__page">Contact</li>
+                </ul>
+                <div class="header__container__card__icons">
+                    <img class="header__container__card__icons__icon" src="../img/header/icons/login.png">
+                    <img class="header__container__card__icons__icon" src="../img/header/icons/search.png">
+                </div>
+            </nav>
+        </div>
     </header>
 </body>
 </html>
