@@ -3,35 +3,37 @@
     color: #FFFFFF;
     padding: 2em 1em;
     &__form{
-        &__label{
-            display: block;
-            font-family: "Roboto", sans;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.125rem;
-            margin-top: .5em;
-        }
-        &__input-container{
-            display: inline-block;
-            border-bottom: 1px solid #BEAD8E;
-            margin: 1em 0;
-            padding-bottom: .6em;
-            width: 100%;
-            &__icon{
-                display: inline-block;
-                vertical-align: middle;
-            }
-            &__input{
-                color: #686868;
-                display: inline-block;
-                vertical-align: middle;
+        &__container{
+            &__label{
+                display: block;
                 font-family: "Roboto", sans;
-                font-weight: 400;
-                line-height: 1rem;
-                border: none;
-                background-color: transparent;
-                outline: none;
-                margin-left: .3em;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.125rem;
+                margin-top: .5em;
+            }
+            &__input-container{
+                display: inline-block;
+                border-bottom: 1px solid #BEAD8E;
+                margin: 1em 0;
+                padding-bottom: .6em;
+                width: 100%;
+                &__icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &__input{
+                    color: #686868;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: "Roboto", sans;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    margin-left: .3em;
+                }
             }
         }
         &__button{
@@ -47,6 +49,22 @@
             background-color: #BEAD8E;
             border: none;
             cursor: pointer;
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        &__form{
+            width: 70%;
+            display: flex;
+            margin: 0 auto;
+            gap: 2em;
+            &__container{
+                width: 30%;
+            }
+            &__button{
+                margin-top: 0;
+                margin-left: auto;
+                margin: 1em 0 1em auto;
+            }
         }
     }
 }

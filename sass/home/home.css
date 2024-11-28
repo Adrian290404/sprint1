@@ -130,7 +130,7 @@ body {
   color: #FFFFFF;
   padding: 2em 1em;
 }
-.home__calendar__form__label {
+.home__calendar__form__container__label {
   display: block;
   font-family: "Roboto", sans;
   font-size: 1rem;
@@ -138,18 +138,18 @@ body {
   line-height: 1.125rem;
   margin-top: 0.5em;
 }
-.home__calendar__form__input-container {
+.home__calendar__form__container__input-container {
   display: inline-block;
   border-bottom: 1px solid #BEAD8E;
   margin: 1em 0;
   padding-bottom: 0.6em;
   width: 100%;
 }
-.home__calendar__form__input-container__icon {
+.home__calendar__form__container__input-container__icon {
   display: inline-block;
   vertical-align: middle;
 }
-.home__calendar__form__input-container__input {
+.home__calendar__form__container__input-container__input {
   color: #686868;
   display: inline-block;
   vertical-align: middle;
@@ -174,6 +174,22 @@ body {
   background-color: #BEAD8E;
   border: none;
   cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+  .home__calendar__form {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    gap: 2em;
+  }
+  .home__calendar__form__container {
+    width: 30%;
+  }
+  .home__calendar__form__button {
+    margin-top: 0;
+    margin-left: auto;
+    margin: 1em 0 1em auto;
+  }
 }
 
 .home__facilities {
@@ -318,7 +334,7 @@ body {
     line-height: 8.125rem;
     letter-spacing: -0.1875rem;
     margin: 0.3em 0;
-    width: 60%;
+    width: 62%;
   }
   .home__introduction__button {
     display: inline;
