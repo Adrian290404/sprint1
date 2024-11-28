@@ -57,6 +57,7 @@ body {
   .header {
     background-color: #222222;
     padding: 2.4em 0;
+    box-shadow: none;
   }
   .header__container {
     width: 80%;

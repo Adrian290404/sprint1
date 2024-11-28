@@ -47,6 +47,25 @@ body {
   color: #BEAD8E;
   padding: 0;
 }
+@media only screen and (min-width: 1000px) {
+  .introduction {
+    padding: 7% 15% 0 15%;
+  }
+  .introduction__up {
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+  }
+  .introduction__title {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.125rem;
+    margin: 0.3em 0;
+    width: 60%;
+  }
+  .introduction__container {
+    margin-right: 2%;
+  }
+}
 
 .room-details__amenities {
   padding: 1em 1em 6em 1em;

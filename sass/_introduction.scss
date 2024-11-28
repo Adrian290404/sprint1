@@ -36,4 +36,21 @@
             }
         }
     }
+    @media only screen and (min-width: 1000px) {
+        padding: 7% 15% 0 15%;
+        &__up{
+            font-size: 0.875rem;
+            line-height: 0.9375rem;
+        }
+        &__title{
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            letter-spacing: -0.125rem;
+            margin: .3em 0;
+            width: 60%;
+        }
+        &__container{
+            margin-right: 2%;
+        }
+    }
 }
