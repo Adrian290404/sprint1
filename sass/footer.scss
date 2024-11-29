@@ -1,96 +1,98 @@
 @use "body";
 .footer{
     background-image: url(../img/footer/background.png);
-    &__logo{
-        margin-top: 1em;
-    }
-    &__introduction{
-        padding: 0 1.4em;
-        &__text{
-            color: #777777;
-            font-family: "Archivo", sans-serif;
-            font-size: 1rem;
-            line-height: 1.625rem;
-            font-weight: 400;
-        }
-        &__social-media{
-            margin-top: 2.5em;
-            &__icon{
-                padding: .5em;
-                background-color: #F8F8F8;
-                margin-right: .5em;
-                &--active{
-                    background-color: #BEAD8E;
+    &__content{
+        &__introduction{
+            padding: 0 1em;
+            &__logo{
+                margin-top: 1em;
+            }
+            &__text{
+                color: #777777;
+                font-family: "Archivo", sans-serif;
+                font-size: 1rem;
+                line-height: 1.625rem;
+                font-weight: 400;
+            }
+            &__social-media{
+                margin-top: 2.5em;
+                &__icon{
+                    padding: .5em;
+                    background-color: #F8F8F8;
+                    margin-right: .5em;
+                    &--active{
+                        background-color: #BEAD8E;
+                    }
                 }
             }
         }
-    }
-    &__services{
-        padding: 0 1.4em;
-        &__title{
-            color: #222222;
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            margin: 1em 0;
-        }
-        &__list{
-            position: relative;
-            &__left{
-            color: #777777;
-            list-style-type: none;
-            font-family: "Roboto", serif;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 3rem;
+        &__services{
+            padding: 0 1.4em;
+            &__title{
+                color: #222222;
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin: 1em 0;
             }
-            &__right{
+            &__list{
+                position: relative;
+                &__left{
                 color: #777777;
                 list-style-type: none;
                 font-family: "Roboto", serif;
                 font-weight: 400;
                 font-size: 1rem;
                 line-height: 3rem;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }        
-        }   
-    }
-    &__contact-us{
-        padding: 0 1.4em;
-        &__title{
-            color: #222222;
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            margin: 1em 0;
-        }
-        &__phone{
-            position: relative;
-            margin: 2em 0 3em 0;
-            &--last{
-                margin: 2em 0 2em 0;
-            }
-            &__text-container{
-                position: absolute;
-                top:0;
-                left: 4em;
-                &__title{
-                    color: #222222;
-                    font-family: "Old Standard TT", serif;
-                    font-weight: 400;
-                    font-size: 1.25rem;
-                    line-height: 1.5rem;
                 }
-                &__subtitle{
+                &__right{
                     color: #777777;
+                    list-style-type: none;
                     font-family: "Roboto", serif;
                     font-weight: 400;
-                    font-size: 0.875rem;
-                    line-height: 1rem;
+                    font-size: 1rem;
+                    line-height: 3rem;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }        
+            }   
+        }
+        &__contact-us{
+            padding: 0 1.4em;
+            &__title{
+                color: #222222;
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin: 1em 0;
+            }
+            &__phone{
+                position: relative;
+                margin: 2em 0 3em 0;
+                &--last{
+                    margin: 2em 0 2em 0;
+                }
+                &__text-container{
+                    position: absolute;
+                    top:0;
+                    left: 4em;
+                    &__title{
+                        color: #222222;
+                        font-family: "Old Standard TT", serif;
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                    }
+                    &__subtitle{
+                        color: #777777;
+                        font-family: "Roboto", serif;
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        line-height: 1rem;
+                    }
                 }
             }
         }
@@ -106,6 +108,49 @@
             line-height: 1.125rem;
             &--copyright{
                 margin-bottom: 1.5em;
+            }
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        &__content{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2em;
+            padding: 3em 0;
+            &__introduction{
+                box-sizing: border-box;
+                width: 30%;
+                padding: 0;
+            }
+            &__services{
+                box-sizing: border-box;
+                width: 35%;
+                padding: 0;
+                &__list{
+                    &__right{
+                        right: none;
+                        left: 50%;
+                    }   
+                }
+            }
+            &__contact-us{
+                box-sizing: border-box;
+                width: 25%;
+                padding: 0;
+            }
+        }
+        &__terms-of-use{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 8%;
+            &__text{
+                &--copyright{
+                    margin-bottom: 0;
+                }
             }
         }
     }
