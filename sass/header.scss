@@ -1,114 +1,132 @@
 @use "body";
 .header {
-    padding: 0 1.3em;
+    &__upper-text{
+        display: none;
+    }
+    @media only screen and (min-width: 1000px) {
     position: relative;
-    box-shadow: 0px 3px 6px 0px #0000004A;
-    &__container{
+    background-color: #222222;
+    padding: 1em 0 3.5em 0;
+    z-index: 1;
         &__upper-text{
-            display: none;
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            color: #FFFFFF;
+            font-family: "Roboto", sans;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.125rem;
         }
-        &__card{
-            &__navbar{
-                display: none;
-                &__link{
-                    text-decoration: none;
-                    &__page{
-                        color: #111111;
-                    }
-                }
-            }
-            &__link{
-                &__logo {
-                    display: inline-block;
-                    vertical-align: middle;
-                    margin-right: 1em;
-                    &--desktop{
-                        display: none;
-                    }
-                }
-            }
-            &__dropdown {
+    }
+} 
+.container{
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 2;
+    &__card{
+        box-shadow: 0px 3px 6px 0px #0000004A;
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        z-index: 999;
+        &__link{
+            &__logo {
                 display: inline-block;
                 vertical-align: middle;
                 margin-right: 1em;
-                &--close {
+                &--desktop{
                     display: none;
                 }
             }
-            &__icons {
-                position: absolute;
-                top: 50%;
-                right: 5%;
-                transform: translateY(-50%);
-                &__icon {
-                    display: inline-block;
-                    vertical-align: middle;
-                    margin-left: 1em;
-                    cursor: pointer;
+        }
+        &__dropdown {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 1em;
+            cursor: pointer;
+        }
+        &__navbar{
+            display: none;
+            list-style-type: none;
+            padding-bottom: 1.5em;
+            box-shadow: 0px -4px 6px 0px #0000004A;
+            padding-left: 1em;
+            &__link{
+                text-decoration: none;
+                &__page{
+                    color: #111111;
+                    font-family: "Archivo", sans-serif;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 1.0625rem;
+                    padding-top: 1.5em;
                 }
+            }
+        }
+        &__icons {
+            position: absolute;
+            top: 1em;
+            right: 5%;
+            &__icon {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 1em;
+                cursor: pointer;
             }
         }
     }
     @media only screen and (min-width: 1000px) {
-        background-color: #222222;
-        padding: 2.4em 0;
+        width: 80%;
         box-shadow: none;
-        &__container{
-            width: 80%;
+        margin: -2.6em auto 0 auto;
+        &__card{
+            background-color: #FFFFFF;
+            margin: 0 auto;
             position: absolute;
-            top: .5em;
-            left: 50%;
-            transform: translateX(-50%);
-            &__upper-text{
-                color: #FFFFFF;
-                display: block;
-                font-family: "Roboto", sans;
-                font-weight: 400;
-                font-size: 1rem;
-                line-height: 1.125rem;
-                margin-bottom: .5em;
+            &__dropdown {
+                display: none;
             }
-            &__card{
-                position: relative;
-                background-color: #FFFFFF;
-                padding: 0;
-                &__dropdown {
-                    display: none;
-                }
+            &__link{
+                &__logo {
+                    &--mobile{
+                        display: none;
+                    }
+                    &--desktop{
+                        display: inline;
+                        width: 200px;
+                        margin-right: 2em;
+                    }
+                }        
+            }
+            &__navbar{
+                list-style-type: none;
+                display: inline;
+                box-shadow: none;
                 &__link{
-                    &__logo {
-                        &--mobile{
-                            display: none;
-                        }
-                        &--desktop{
-                            display: inline;
-                            width: 200px;
-                            margin-right: 2em;
-                        }
-                    }        
-                }
-                &__navbar{
-                    list-style-type: none;
-                    display: inline;
-                    &__link{
-                        &__page{
-                            display: inline;
-                            font-family: "Archivo", sans-serif;
-                            font-weight: 600;
-                            font-size: 1rem;
-                            line-height: 1.0625rem;
-                            margin-left: 4%;
-                        }
+                    &__page{
+                        display: inline;
+                        margin-left: 4%;
                     }
                 }
-                &__icons {
-                    right: 7%;
-                    &__icon {
-                        border: 2px solid #8585854D;
-                        padding: .8em;
-                    }
+            }
+            &__icons {
+                right: 7%;
+                &__icon {
+                    border: 2px solid #8585854D;
+                    padding: .8em;
                 }
             }
         }
     }
+}
+
+.is-visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
