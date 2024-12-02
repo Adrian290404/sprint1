@@ -20,16 +20,16 @@ body {
   line-height: 1.125rem;
   letter-spacing: 0.125rem;
 }
-.home__about-us__introduction__title {
+.home__about-us__introduction__container__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -0.0625rem;
   text-align: center;
-  margin: 0.5em auto 0.3em auto;
+  margin: 0.5em 0 0.3em 0;
 }
-.home__about-us__introduction__description {
+.home__about-us__introduction__container__description {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -37,7 +37,7 @@ body {
   line-height: 1.5rem;
   width: 95%;
 }
-.home__about-us__introduction__button {
+.home__about-us__introduction__container__button {
   display: block;
   color: #FFFFFF;
   font-family: "Archivo", sans-serif;
@@ -51,32 +51,32 @@ body {
   border: none;
   cursor: pointer;
 }
-.home__about-us__strong-team {
+.home__about-us__pictures__strong-team {
   text-align: center;
   margin: -8em 0 0 0;
 }
-.home__about-us__strong-team__image {
+.home__about-us__pictures__strong-team__image {
   display: block;
   margin: 0 auto;
   width: 70%;
 }
-.home__about-us__strong-team__container {
+.home__about-us__pictures__strong-team__container {
   margin: 0 auto 3em auto;
   padding: 3em 0;
   width: 70%;
   position: relative;
   box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.0196078431);
 }
-.home__about-us__strong-team__container__icon {
+.home__about-us__pictures__strong-team__container__icon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.home__about-us__strong-team__container__iconbg {
+.home__about-us__pictures__strong-team__container__iconbg {
   display: block;
   margin-left: auto;
 }
-.home__about-us__strong-team__container__title {
+.home__about-us__pictures__strong-team__container__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.875rem;
@@ -84,7 +84,7 @@ body {
   letter-spacing: -0.9px;
   margin: -0.8em 0 0.8em 0;
 }
-.home__about-us__strong-team__container__description {
+.home__about-us__pictures__strong-team__container__description {
   font-family: "Roboto", sans;
   font-weight: 400;
   font-size: 0.875rem;
@@ -92,21 +92,21 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.home__about-us__luxury-room {
+.home__about-us__pictures__luxury-room {
   text-align: center;
 }
-.home__about-us__luxury-room__image {
+.home__about-us__pictures__luxury-room__image {
   display: block;
   margin: 0 auto;
   width: 70%;
 }
-.home__about-us__luxury-room__container {
+.home__about-us__pictures__luxury-room__container {
   margin: 0 auto;
   padding: 3em 0;
   width: 70%;
   background-color: #222222;
 }
-.home__about-us__luxury-room__container__title {
+.home__about-us__pictures__luxury-room__container__title {
   color: #FFFFFF;
   font-family: "Old Standard TT", serif;
   font-weight: 400;
@@ -115,7 +115,7 @@ body {
   letter-spacing: -0.9px;
   margin: 1em 0;
 }
-.home__about-us__luxury-room__container__description {
+.home__about-us__pictures__luxury-room__container__description {
   color: #FFFFFF;
   font-family: "Roboto", sans;
   font-weight: 400;
@@ -123,6 +123,142 @@ body {
   line-height: 1.375rem;
   width: 80%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 1000px) {
+  .home__about-us {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 6em 0;
+  }
+  .home__about-us__introduction {
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 0;
+  }
+  .home__about-us__introduction__up {
+    margin: 6em 0 2em 15%;
+  }
+  .home__about-us__introduction__container {
+    background-color: #F9F9F9;
+    text-align: left;
+    padding: 0 15% 30% 15%;
+  }
+  .home__about-us__introduction__container__title {
+    font-size: 5rem;
+    line-height: 5.625rem;
+    letter-spacing: -0.125rem;
+    text-align: left;
+  }
+  .home__about-us__introduction__container__description {
+    width: 50%;
+    min-width: 29em;
+  }
+  .home__about-us__pictures {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    justify-content: end;
+    margin: 0 -6em 0 0;
+    z-index: 1;
+  }
+  .home__about-us__pictures__strong-team {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+    text-align: center;
+    margin: 0;
+    margin-right: auto;
+  }
+  .home__about-us__pictures__strong-team__image {
+    display: block;
+    margin: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home__about-us__pictures__strong-team__container {
+    margin: 0;
+    padding: 3em 0;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 6/7;
+    box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.0196078431);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__about-us__pictures__strong-team__container__icon {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -60%);
+  }
+  .home__about-us__pictures__strong-team__container__iconbg {
+    display: block;
+    margin-left: auto;
+  }
+  .home__about-us__pictures__strong-team__container__title {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    margin: -0.8em 0 0.8em 0;
+  }
+  .home__about-us__pictures__strong-team__container__description {
+    font-family: "Roboto", sans;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .home__about-us__pictures__luxury-room {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap: 2em;
+    margin: 2em 0 0 0;
+  }
+  .home__about-us__pictures__luxury-room__image {
+    display: block;
+    margin: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home__about-us__pictures__luxury-room__container {
+    margin: 0;
+    padding: 3em 0;
+    width: 100%;
+    aspect-ratio: 6/7;
+    position: relative;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__about-us__pictures__luxury-room__container__title {
+    color: #FFFFFF;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    margin: 1em 0;
+  }
+  .home__about-us__pictures__luxury-room__container__description {
+    color: #FFFFFF;
+    font-family: "Roboto", sans;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .home__calendar {

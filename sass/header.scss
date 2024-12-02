@@ -3,22 +3,6 @@
     &__upper-text{
         display: none;
     }
-    @media only screen and (min-width: 1000px) {
-    position: relative;
-    background-color: #222222;
-    padding: 1em 0 3.5em 0;
-    z-index: 1;
-        &__upper-text{
-            width: 80%;
-            margin: 0 auto;
-            display: block;
-            color: #FFFFFF;
-            font-family: "Roboto", sans;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 1.125rem;
-        }
-    }
 } 
 .container{
     position: sticky;
@@ -78,7 +62,25 @@
             }
         }
     }
-    @media only screen and (min-width: 1000px) {
+}
+@media only screen and (min-width: 1000px) {
+    .header{
+        position: relative;
+        background-color: #222222;
+        padding: 1em 0 3.5em 0;
+        z-index: 1;
+        &__upper-text{
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            color: #FFFFFF;
+            font-family: "Roboto", sans;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.125rem;
+        }
+    }
+    .container{
         width: 80%;
         box-shadow: none;
         margin: -2.6em auto 0 auto;
