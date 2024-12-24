@@ -71,18 +71,49 @@ body {
   margin-top: 3em;
   padding: 0 1em;
 }
-.offers__offert__box-shadow__image-container {
+.offers__offert__image-container {
   position: relative;
 }
-.offers__offert__box-shadow__image-container__image {
+.offers__offert__image-container__image {
   width: 100%;
 }
-.offers__offert__box-shadow__image-container__prev-price-container {
+.offers__offert__content {
+  position: relative;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
+  padding: 1em 1em 2em 1em;
+}
+.offers__offert__content__golden-line {
+  display: none;
+}
+.offers__offert__content__up {
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+.offers__offert__content__title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.0625rem;
+  letter-spacing: -0.0625rem;
+  margin: 0.4em 0;
+}
+.offers__offert__content__price-container {
+  position: absolute;
+  z-index: 1;
+  top: -2.5%;
+  right: 0;
+}
+.offers__offert__content__price-container__prev-price-container {
   position: absolute;
   right: 1.8em;
   bottom: 3.5em;
 }
-.offers__offert__box-shadow__image-container__prev-price-container__previous-price {
+.offers__offert__content__price-container__prev-price-container__previous-price {
   display: inline;
   color: #BEAD8E;
   font-family: "Archivo", sans-serif;
@@ -91,7 +122,7 @@ body {
   line-height: 1.5625rem;
   text-decoration: line-through;
 }
-.offers__offert__box-shadow__image-container__prev-price-container__previous-price--little {
+.offers__offert__content__price-container__prev-price-container__previous-price--little {
   color: #BEAD8E;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -99,7 +130,7 @@ body {
   line-height: 0.6875rem;
   text-decoration: line-through;
 }
-.offers__offert__box-shadow__image-container__current-price {
+.offers__offert__content__price-container__current-price {
   position: absolute;
   right: 1em;
   bottom: 0.5em;
@@ -109,32 +140,14 @@ body {
   font-size: 1.875rem;
   line-height: 2rem;
 }
-.offers__offert__box-shadow__image-container__current-price--little {
+.offers__offert__content__price-container__current-price--little {
   font-size: 0.75rem;
   line-height: 0.8125rem;
 }
-.offers__offert__box-shadow__content {
-  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
-  padding: 0 1em 2em 1em;
+.offers__offert__content__grey-line {
+  display: none;
 }
-.offers__offert__box-shadow__content__up {
-  color: #777777;
-  font-family: "Archivo", sans-serif;
-  font-size: 0.8125rem;
-  line-height: 0.9375rem;
-  font-weight: 700;
-  letter-spacing: 0.125rem;
-}
-.offers__offert__box-shadow__content__title {
-  color: #222222;
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.0625rem;
-  letter-spacing: -0.0625rem;
-  margin: 0.4em 0;
-}
-.offers__offert__box-shadow__content__description {
+.offers__offert__content__description {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-size: 0.8125rem;
@@ -142,11 +155,11 @@ body {
   font-weight: 400;
   width: 86%;
 }
-.offers__offert__box-shadow__content__container {
+.offers__offert__content__container {
   position: relative;
   margin: 1em 0;
 }
-.offers__offert__box-shadow__content__container__left {
+.offers__offert__content__container__left {
   color: #777777;
   list-style-type: none;
   font-family: "Roboto", serif;
@@ -154,7 +167,7 @@ body {
   font-size: 1rem;
   line-height: 3rem;
 }
-.offers__offert__box-shadow__content__container__right {
+.offers__offert__content__container__right {
   color: #777777;
   list-style-type: none;
   font-family: "Roboto", serif;
@@ -165,7 +178,7 @@ body {
   top: 0;
   right: 2.5em;
 }
-.offers__offert__box-shadow__content__button {
+.offers__offert__content__button {
   display: block;
   color: #FFFFFF;
   font-family: "Archivo", sans-serif;
@@ -177,6 +190,75 @@ body {
   background-color: #BEAD8E;
   border: none;
   cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__offert {
+    width: 69%;
+    margin: 4em auto 4em auto;
+  }
+  .offers__offert__image-container {
+    position: relative;
+  }
+  .offers__offert__image-container__image {
+    width: 100%;
+  }
+  .offers__offert__content {
+    position: relative;
+    width: 90%;
+    margin: -2em auto 0 auto;
+    background-color: #FFFFFF;
+    padding: 3em;
+  }
+  .offers__offert__content__golden-line {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #BEAD8E;
+    margin-bottom: 2em;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .offers__offert__content__price-container {
+    position: absolute;
+    z-index: 1;
+    top: 8.7em;
+    right: 0.5em;
+  }
+  .offers__offert__content__price-container__prev-price-container {
+    right: 2.5em;
+    bottom: 5em;
+  }
+  .offers__offert__content__price-container__prev-price-container__previous-price {
+    font-size: 1.875rem;
+    line-height: 2rem;
+    text-decoration: line-through;
+  }
+  .offers__offert__content__price-container__prev-price-container__previous-price--little {
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+  }
+  .offers__offert__content__price-container__current-price {
+    font-size: 2.5rem;
+    line-height: 2.6875rem;
+  }
+  .offers__offert__content__price-container__current-price--little {
+    font-size: 1rem;
+    line-height: 1.0625rem;
+  }
+  .offers__offert__content__grey-line {
+    display: block;
+    width: 100%;
+    margin: 1.5em 0 2em 0;
+    border-top: 2px solid #ECECEC;
+  }
+  .offers__offert__content__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+  }
 }
 
 .offers__popular-list {
