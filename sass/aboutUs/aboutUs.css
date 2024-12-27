@@ -244,6 +244,29 @@ body {
   background-color: #BEAD8E;
   color: #FFFFFF;
 }
+@media only screen and (min-width: 1000px) {
+  .about-us__general-info__video-container {
+    width: 68.5%;
+    padding-top: 39.9%;
+    margin: 0 auto;
+  }
+  .about-us__general-info__description {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.125rem;
+    width: 68.5%;
+    margin: 0.6em auto;
+  }
+  .about-us__general-info__icons-text {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  .about-us__general-info__icons-text__container {
+    padding: 2em 1em;
+    width: 11%;
+  }
+}
 
 .about-us__restaurant {
   padding: 1em 0 4em 0;

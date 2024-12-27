@@ -47,4 +47,27 @@
             }
         }
     }
+    @media only screen and (min-width: 1000px) {
+        &__video-container{
+            width: 68.5%;
+            padding-top: 39.9%;
+            margin: 0 auto;
+        }
+        &__description{
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -0.125rem;
+            width: 68.5%;
+            margin: .6em auto;
+        }
+        &__icons-text{
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            &__container{
+                padding: 2em 1em;
+                width: 11%;
+            }
+        }
+    }
 }
