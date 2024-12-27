@@ -275,10 +275,10 @@ body {
   padding: 1em;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
 }
-.about-us__restaurant__container__image {
+.about-us__restaurant__container__left__image {
   width: 100%;
 }
-.about-us__restaurant__container__up {
+.about-us__restaurant__container__right__up {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-size: 0.8125rem;
@@ -288,7 +288,7 @@ body {
   text-align: left;
   margin: 2.5em 0;
 }
-.about-us__restaurant__container__title {
+.about-us__restaurant__container__right__title {
   color: #222222;
   font-family: "Old Standard TT", serif;
   font-weight: 400;
@@ -296,7 +296,7 @@ body {
   line-height: 3.0625rem;
   letter-spacing: -0.0625rem;
 }
-.about-us__restaurant__container__description {
+.about-us__restaurant__container__right__description {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-size: 0.8125rem;
@@ -305,7 +305,7 @@ body {
   margin: 2em 0;
   width: 90%;
 }
-.about-us__restaurant__container__button {
+.about-us__restaurant__container__right__button {
   display: block;
   color: #FFFFFF;
   font-family: "Archivo", sans-serif;
@@ -317,4 +317,26 @@ body {
   background-color: #BEAD8E;
   border: none;
   cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+  .about-us__restaurant__container {
+    width: 68.5%;
+    margin: 0 auto;
+    padding: 0 2em 2em 2em;
+    display: flex;
+    gap: 3em;
+  }
+  .about-us__restaurant__container__left {
+    flex: 1;
+  }
+  .about-us__restaurant__container__left__image {
+    width: 100%;
+  }
+  .about-us__restaurant__container__right {
+    flex: 1;
+  }
+  .about-us__restaurant__container__right__title {
+    font-size: 3rem;
+    line-height: 3.6875rem;
+  }
 }/*# sourceMappingURL=aboutUs.css.map */
