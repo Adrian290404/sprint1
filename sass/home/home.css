@@ -366,6 +366,17 @@ body {
   font-size: 1rem;
   line-height: 1.3125rem;
 }
+@media only screen and (min-width: 1000px) {
+  .home__information {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto 5em auto;
+  }
+  .home__information__container {
+    margin: 0;
+  }
+}
 
 .home__introduction {
   color: #FFFFFF;
