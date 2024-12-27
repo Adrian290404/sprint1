@@ -488,6 +488,51 @@ body {
   border: none;
   cursor: pointer;
 }
+.home__intro-video__gold-bg {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .home__intro-video {
+    padding: 6em 15% 6em 15%;
+    position: relative;
+  }
+  .home__intro-video__title {
+    font-size: 5rem;
+    line-height: 5.3125rem;
+    letter-spacing: -0.125rem;
+    width: 50%;
+  }
+  .home__intro-video__description {
+    margin: 1em 0;
+    width: 45%;
+  }
+  .home__intro-video__video-container {
+    position: absolute;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 2em 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -19%);
+  }
+  .home__intro-video__video-container__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    border: none;
+  }
+  .home__intro-video__gold-bg {
+    display: block;
+    background-color: #AD9D82;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 
 .home__menu__icon {
   display: block;

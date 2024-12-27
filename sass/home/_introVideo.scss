@@ -55,4 +55,47 @@
         border: none;
         cursor: pointer;
     }
+    &__gold-bg{
+        display: none;
+    }
+    @media only screen and (min-width: 1000px) {
+        padding: 6em 15% 6em 15%;
+        position: relative;
+        &__title{
+            font-size: 5rem;
+            line-height: 5.3125rem;
+            letter-spacing: -0.125rem;
+            width: 50%;
+        }
+        &__description{
+            margin: 1em 0;
+            width: 45%;
+        }
+        &__video-container{
+            position: absolute;
+            width: 100%;
+            padding-top: 56.25%;
+            margin: 2em 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(5%, -19%);
+            &__video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 30%;
+                border: none;
+            }
+        }
+        &__gold-bg{
+            display: block;
+            background-color: #AD9D82;
+            width: 30%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }
