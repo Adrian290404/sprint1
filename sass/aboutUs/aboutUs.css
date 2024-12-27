@@ -124,12 +124,62 @@ body {
 .about-us__counter__slider {
   text-align: center;
 }
-.about-us__counter__slider__image {
+.about-us__counter__slider__image-container {
+  flex: 1;
+}
+.about-us__counter__slider__image-container__image {
   width: 100%;
   height: auto;
 }
+.about-us__counter__slider__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
 .about-us__counter__slider__buttons__button {
-  margin: 0 0.1em;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+}
+.about-us__counter__slider__buttons__button--active {
+  background-color: #BEAD8E;
+}
+@media only screen and (min-width: 1000px) {
+  .about-us__counter {
+    padding: 4em 1em 2em 1em;
+    width: 68.5%;
+    margin: 0 auto;
+  }
+  .about-us__counter__title {
+    font-size: 5rem;
+    line-height: 6.125rem;
+    letter-spacing: -0.125rem;
+  }
+  .about-us__counter__facts-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  .about-us__counter__facts-container__fact {
+    gap: 2em;
+  }
+  .about-us__counter__slider {
+    display: flex;
+    gap: 2em;
+  }
+  .about-us__counter__slider__image-container {
+    flex: 1;
+  }
+  .about-us__counter__slider__image-container__image {
+    width: 100%;
+    height: auto;
+  }
+  .about-us__counter__slider__buttons {
+    display: none;
+  }
 }
 
 .about-us__facilities {
