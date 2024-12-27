@@ -147,7 +147,7 @@ body {
 .offers__offert__content__grey-line {
   display: none;
 }
-.offers__offert__content__description {
+.offers__offert__content__information__left__description {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-size: 0.8125rem;
@@ -155,11 +155,11 @@ body {
   font-weight: 400;
   width: 86%;
 }
-.offers__offert__content__container {
+.offers__offert__content__information__right__container {
   position: relative;
   margin: 1em 0;
 }
-.offers__offert__content__container__left {
+.offers__offert__content__information__right__container__left {
   color: #777777;
   list-style-type: none;
   font-family: "Roboto", serif;
@@ -167,7 +167,7 @@ body {
   font-size: 1rem;
   line-height: 3rem;
 }
-.offers__offert__content__container__right {
+.offers__offert__content__information__right__container__right {
   color: #777777;
   list-style-type: none;
   font-family: "Roboto", serif;
@@ -253,11 +253,48 @@ body {
     margin: 1.5em 0 2em 0;
     border-top: 2px solid #ECECEC;
   }
-  .offers__offert__content__container {
+  .offers__offert__content__information {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2em;
+    align-items: start;
+  }
+  .offers__offert__content__information__left {
+    width: 60%;
+  }
+  .offers__offert__content__information__left__description {
+    color: #777777;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    width: 86%;
+  }
+  .offers__offert__content__information__right {
+    width: 40%;
+  }
+  .offers__offert__content__information__right__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .offers__offert__content__information__right__container__left {
+    color: #777777;
+    list-style-type: none;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+  .offers__offert__content__information__right__container__right {
+    color: #777777;
+    list-style-type: none;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+  .offers__offert__content__button {
+    margin-top: -7em;
   }
 }
 
