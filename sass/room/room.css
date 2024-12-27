@@ -142,4 +142,22 @@ body {
 .rooms__rooms-info__controls__number--selected {
   color: #FFFFFF;
   background-color: #BEAD8E;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms__rooms-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: 69%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .rooms__rooms-info__room {
+    flex: 1 1 calc(33.333% - 2em);
+    max-width: calc(33.333% - 2em);
+  }
+  .rooms__rooms-info__controls {
+    width: 69%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=room.css.map */

@@ -73,4 +73,20 @@
             }
         }
     }
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        width: 69%;
+        margin: 0 auto;
+        justify-content: space-between;
+        &__room{
+            flex: 1 1 calc(33.333% - 2em);
+            max-width: calc(33.333% - 2em);
+        }
+        &__controls{
+            width: 69%;
+            margin: 0 auto;
+        }
+    }
 }
