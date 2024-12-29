@@ -48,4 +48,17 @@
         cursor: pointer;
         margin: 3em auto 0 auto;
     }
+    @media only screen and (min-width: 1000px) {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2em 0 6em 0;
+        .flex{
+            display: flex;
+            gap: 2em
+        }
+        &__button {
+            width: auto;
+            padding: 1.5em 7em;
+        }
+    }
 }

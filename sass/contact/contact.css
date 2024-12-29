@@ -114,6 +114,23 @@ body {
   margin-top: 2em;
   width: 100%;
 }
+@media only screen and (min-width: 1000px) {
+  .contact__details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 68.5%;
+    margin: 0 auto;
+    padding: 5em 0 2em 0;
+  }
+  .contact__details-container__detail {
+    flex: 1 1 calc(33.333% - 2em);
+    max-width: calc(33.333% - 2em);
+  }
+  .contact__details-container__image {
+    margin-top: 0;
+  }
+}
 
 .contact__form-container {
   padding: 3em 1em 4em 1em;
@@ -163,4 +180,19 @@ body {
   border: none;
   cursor: pointer;
   margin: 3em auto 0 auto;
+}
+@media only screen and (min-width: 1000px) {
+  .contact__form-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em 0 6em 0;
+  }
+  .contact__form-container .flex {
+    display: flex;
+    gap: 2em;
+  }
+  .contact__form-container__button {
+    width: auto;
+    padding: 1.5em 7em;
+  }
 }/*# sourceMappingURL=contact.css.map */
