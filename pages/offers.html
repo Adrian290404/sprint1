@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="/js/offers/rooms.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="header"></div>
@@ -187,17 +190,45 @@
         <section class="offers__popular-list">
             <h2 class="offers__popular-list__up">POPULAR LIST</h2>
             <h1 class="offers__popular-list__title">Popular Rooms</h1>
-            <article class="offers__popular-list__container">
-                <div class="offers__popular-list__container__slider">
-                    <img class="offers__popular-list__container__slider__controller offers__popular-list__container__slider__controller--left" src="../img/home/icons/left.png">
-                    <img class="offers__popular-list__container__slider__controller offers__popular-list__container__slider__controller--right" src="../img/home/icons/right.png">
-                    <img class="offers__popular-list__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+            <div class="swiper popular-list-swiper popular-list__room">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="offers__popular-list__room__container">
+                            <div class="offers__popular-list__room__container__slider">
+                                <img class="offers__popular-list__room__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+                            </div>
+                            <img class="offers__popular-list__room__container__icons" src="../img/home/icons/roomIcons.png">
+                            <h3 class="offers__popular-list__room__container__title">Minimal Duplex Room</h3>
+                            <p class="offers__popular-list__room__container__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="offers__popular-list__room__container__details offers__popular-list__room__container__details--price">$345/Night<span class="offers__popular-list__room__container__details offers__popular-list__room__container__details--booking">Booking Now</span></p>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="offers__popular-list__room__container">
+                            <div class="offers__popular-list__room__container__slider">
+                                <img class="offers__popular-list__room__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+                            </div>
+                            <img class="offers__popular-list__room__container__icons" src="../img/home/icons/roomIcons.png">
+                            <h3 class="offers__popular-list__room__container__title">Minimal Duplex Room</h3>
+                            <p class="offers__popular-list__room__container__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="offers__popular-list__room__container__details offers__popular-list__room__container__details--price">$345/Night<span class="offers__popular-list__room__container__details offers__popular-list__room__container__details--booking">Booking Now</span></p>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="offers__popular-list__room__container">
+                            <div class="offers__popular-list__room__container__slider">
+                                <img class="offers__popular-list__room__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+                            </div>
+                            <img class="offers__popular-list__room__container__icons" src="../img/home/icons/roomIcons.png">
+                            <h3 class="offers__popular-list__room__container__title">Minimal Duplex Room</h3>
+                            <p class="offers__popular-list__room__container__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="offers__popular-list__room__container__details offers__popular-list__room__container__details--price">$345/Night<span class="offers__popular-list__room__container__details offers__popular-list__room__container__details--booking">Booking Now</span></p>
+                        </article>
+                    </div>
                 </div>
-                <img class="offers__popular-list__container__icons" src="../img/home/icons/roomIcons.png">
-                <h3 class="offers__popular-list__container__title">Minimal Duplex Room</h3>
-                <p class="offers__popular-list__container__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                <p class="offers__popular-list__container__details offers__popular-list__container__details--price">$345/Night<span class="offers__popular-list__container__details offers__popular-list__container__details--booking">Booking Now</span></p>
-            </article>
+                <img class="swiper__controller swiper__controller--left" src="../img/home/icons/left.png">
+                <img class="swiper__controller swiper__controller--right" src="../img/home/icons/right.png">
+            </div>
         </section>
     </main>
 

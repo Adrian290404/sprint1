@@ -20,66 +20,92 @@
         letter-spacing: -0.0625rem;
         margin: .4em 0 .7em 0;
     }
-    &__container{
-        background-color: #FFFFFF;
-        padding-bottom: 2em;
-        &__slider{
-            position: relative;
-            &__image{
-                width: 100%;
-            }
-            &__controller{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: .9em 1em;
-                cursor: pointer;
-                &--left{
-                    left: -.3em;
-                    background-color: #FFFFFF;
-                }
-                &--right{
-                    right: -.3em;
-                    background-color: #BDAC8D;
+    &__room{
+        &__container{
+            background-color: #FFFFFF;
+            padding-bottom: 2em;
+            &__slider{
+                position: relative;
+                &__image{
+                    width: 100%;
                 }
             }
-        }
-        &__icons{
-            position: relative;
-            padding: .6em 1.8em;
-            background-color: white;
-            margin-top: -1.4em;
-            z-index: 1;
-        }
-        &__title{
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            letter-spacing: -0.72px;
-            margin: 1em 0;
-        }
-        &__description{
-            color: #777777;
-            font-family: "Roboto", sans;
-            font-weight: 400;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            width: 90%;
-            margin: 0 auto 1em auto;
-        }
-        &__details{
-            font-family: "Archivo", sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.0625rem;
-            &--price{
-                color: #BEAD8E;
+            &__icons{
+                position: relative;
+                padding: .6em 1.8em;
+                background-color: white;
+                margin-top: -1.4em;
+                z-index: 1;
             }
-            &--booking{
-                color: #BDBDBD;
-                margin-left: 1em;
+            &__title{
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                letter-spacing: -0.72px;
+                margin: 1em 0;
+            }
+            &__description{
+                color: #777777;
+                font-family: "Roboto", sans;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 90%;
+                margin: 0 auto 1em auto;
+            }
+            &__details{
+                font-family: "Archivo", sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.0625rem;
+                &--price{
+                    color: #BEAD8E;
+                }
+                &--booking{
+                    color: #BDBDBD;
+                    margin-left: 1em;
+                }
             }
         }
     }
 }
+.swiper{
+    &__controller{
+        position: absolute;
+        top: 35%;
+        padding: .9em 1em;
+        z-index: 1;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &--left{
+            left: 0;
+            background-color: #FFFFFF;
+        }
+        &--right{
+            right: 0;
+            background-color: #BDAC8D;
+        }
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .offers__popular-list {
+        padding-left: 18%;
+        padding-right: 18%;
+        &__room {
+            display: flex;
+            gap: 2em;
+        }
+        .swiper-wrapper{
+            gap: 2em;
+            justify-content: space-between;
+        }
+        .swiper-slide {
+            flex: 1 1 calc(33.333% - 2em);
+            max-width: calc(33.333% - 2em);
+        }
+        .swiper__controller {
+            display: none;
+        }
+    }
+  }
