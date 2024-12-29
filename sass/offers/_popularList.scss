@@ -90,8 +90,13 @@
 }
 @media only screen and (min-width: 1000px) {
     .offers__popular-list {
-        padding-left: 18%;
-        padding-right: 18%;
+        padding: 3em 18% 5em 18%;
+        margin-bottom: 6em;
+        &__title{
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: -0.125rem;
+        }
         &__room {
             display: flex;
             gap: 2em;
