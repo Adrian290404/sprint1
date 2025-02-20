@@ -572,8 +572,13 @@ body {
 }
 
 .home__menu__icon {
-  display: block;
   margin-left: auto;
+}
+.home__menu__icon--mobile {
+  display: block;
+}
+.home__menu__icon--desktop {
+  display: none;
 }
 .home__menu__container {
   padding: 0 1em;
@@ -595,7 +600,7 @@ body {
   margin: 0.4em 0 0.6em 0;
 }
 .home__menu__container__menu-container__food-container {
-  display: flex;
+  display: flex !important;
   align-items: start;
   margin-bottom: 2em;
 }
@@ -616,7 +621,7 @@ body {
   margin: 0 0 0.5em 0;
 }
 .home__menu__container__menu-container__food-container__text__description {
-  font-family: "Roboto", sans;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -642,13 +647,80 @@ body {
 .home__menu__slider__image {
   width: 90%;
   height: auto;
-  margin: 4em 0 1em 0;
+  margin: 4em 0 3em 0;
 }
-.home__menu__slider__buttons__button {
-  margin: 0 0.1em;
-  cursor: pointer;
+@media only screen and (min-width: 1000px) {
+  .home__menu__icon {
+    margin-left: 3em;
+  }
+  .home__menu__icon--mobile {
+    display: none;
+  }
+  .home__menu__icon--desktop {
+    display: block;
+  }
+  .home__menu__container {
+    padding: 0 1em;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .home__menu__container__title {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -0.125rem;
+  }
+  .home__menu__container__menu-container__food-container__image {
+    width: 150px;
+    height: 150px;
+    margin-right: 1em;
+  }
+  .home__menu__container__menu-container__controls {
+    text-align: right;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+  }
+  .home__menu__container__menu-container__controls__controller {
+    padding: 1.5em 1.5em;
+  }
+  .home__menu__slider {
+    display: flex;
+  }
 }
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #AD9D82 !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .home__menu__slider {
+    display: block;
+  }
+  .home__menu__slider .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .home__menu__slider .swiper-slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
 .home__rooms {
   padding: 4em 0 2em 0;
   text-align: center;
