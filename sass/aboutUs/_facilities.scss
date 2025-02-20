@@ -19,43 +19,71 @@
         margin: .4em 0;
     }
     &__container{
-        background-color: #292929;
         text-align: left;
-        padding: 0 1em 4em 1em;
-        &__number{
-            color: #222222;
-            font-family: "Archivo", sans-serif;
-            font-size: 7.5rem;
-            line-height: 8.125rem;
-            font-weight: 700;
-            text-align: right;
+        &__content{
+            width: 100%;
+            height: 100%;
+            background-color: #292929;
+            padding: 0 1em 4em 1em;
+            &__number{
+                color: #222222;
+                font-family: "Archivo", sans-serif;
+                font-size: 7.5rem;
+                line-height: 8.125rem;
+                font-weight: 700;
+                text-align: right;
+            }
+            &__icon{
+                width: 60px;
+                height: 60px;
+                display: block;
+                margin: -2.5em auto 3em 0;
+            }
+            &__title{
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 1.875rem;
+                line-height: 1.875rem;
+                letter-spacing: -0.9px;
+            }
+            &__description{
+                font-family: "Archivo", sans-serif;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 80%;
+                margin: 2em 0 0 0;
+            }
         }
-        &__icon{
-            display: block;
-            margin: -2.5em auto 3em 0;
-        }
+    }
+    @media only screen and (min-width: 1000px) {
         &__title{
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 1.875rem;
-            line-height: 1.875rem;
-            letter-spacing: -0.9px;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: -0.125rem;
         }
-        &__description{
-            font-family: "Archivo", sans-serif;
-            font-weight: 400;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            width: 80%;
-            margin: 2em 0 0 0;
-        }
-    }
-    &__buttons{
-        text-align: center;
-        margin-top: 1em;
-        &__button{
-            margin: 0 .1em;
-            cursor: pointer;
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5em;
+            max-width: calc((25em * 3) + (5em * 2));
+            margin: 0 auto;
+            &__content{
+                max-width: 25em;
+                flex: 1 1 25em;
+                box-sizing: border-box;
+                display: block;
+                padding-left: 5em;
+            }
         }
     }
+}
+.swiper-pagination-bullet {
+    width: 10px;          
+    height: 10px;    
+    opacity: 1;           
+    border-radius: 50%;   
+}
+.swiper-pagination-bullet-active {
+    background: #AD9D82 !important;  
 }

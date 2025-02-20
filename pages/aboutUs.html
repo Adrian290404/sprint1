@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/aboutUs/facilitiesSwiper.js" defer></script>
 </head>
 <body>
     <div id="header"></div>
@@ -67,19 +70,58 @@
         <section class="about-us__facilities">
             <h2 class="about-us__facilities__up">FACILITIES</h2>
             <h1 class="about-us__facilities__title">Core Features</h1>
-            <article class="about-us__facilities__container">
-                <p class="about-us__facilities__container__number">01</p>
-                <img class="about-us__facilities__container__icon" src="../img/home/icons/rating.png">
-                <h3 class="about-us__facilities__container__title">Have High Rating</h3>
-                <p class="about-us__facilities__container__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            </article>
-            <div class="about-us__facilities__buttons">
-                <img class="about-us__facilities__buttons__button about-us__facilities__buttons__button--active" src="../img/home/icons/circleActive.png">
-                <img class="about-us__facilities__buttons__button" src="../img/about/icons/circleDark.png">
-                <img class="about-us__facilities__buttons__button" src="../img/about/icons/circleDark.png">
-                <img class="about-us__facilities__buttons__button" src="../img/about/icons/circleDark.png">
-                <img class="about-us__facilities__buttons__button" src="../img/about/icons/circleDark.png">
-                <img class="about-us__facilities__buttons__button" src="../img/about/icons/circleDark.png">
+            <div class="swiper about-us__facilities__swiper">
+                <div class="swiper-wrapper about-us__facilities__container">
+                    <div class="swiper-slide about-us__facilities__container__content about-us__facilities__container__content--first">
+                        <p class="about-us__facilities__container__content__number">01</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/rating.png" alt="Rating">
+                        <h3 class="about-us__facilities__container__content__title">Have High Rating</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide about-us__facilities__container__content">
+                        <p class="about-us__facilities__container__content__number">02</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/hours.png" alt="Hours">
+                        <h3 class="about-us__facilities__container__content__title">Quiet Hours</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide about-us__facilities__container__content">
+                        <p class="about-us__facilities__container__content__number">03</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/location.png" alt="Location">
+                        <h3 class="about-us__facilities__container__content__title">Best Locations</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide about-us__facilities__container__content">
+                        <p class="about-us__facilities__container__content__number">04</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/cancellation.png" alt="Cancellation">
+                        <h3 class="about-us__facilities__container__content__title">Free Cancellation</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide about-us__facilities__container__content">
+                        <p class="about-us__facilities__container__content__number">05</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/payment.png" alt="Payment">
+                        <h3 class="about-us__facilities__container__content__title">Payment Options</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide about-us__facilities__container__content">
+                        <p class="about-us__facilities__container__content__number">06</p>
+                        <img class="about-us__facilities__container__content__icon" src="../img/home/icons/offers.png" alt="Offers">
+                        <h3 class="about-us__facilities__container__content__title">Special Offers</h3>
+                        <p class="about-us__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="about-us__counter">
