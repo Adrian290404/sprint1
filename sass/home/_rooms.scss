@@ -83,31 +83,13 @@
     }
     @media only screen and (min-width: 1000px) {
         padding-top: 0;
-        &__up{
-            color: #777777;
-            font-family: "Archivo", sans-serif;
-            font-weight: 700;
-            font-size: 0.875rem;
-            line-height: 0.9375rem;
-            letter-spacing: 0.125rem;
-        }
         &__title{
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 3.5rem;
-            line-height: 3.75rem;
-            letter-spacing: -0.0625rem;
-            text-align: center;
-            margin: .5em 0;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: -0.125rem;
         }
         &__container{
-            &__icons{
-                position: relative;
-                padding: .6em 1.8em;
-                background-color: white;
-                margin-bottom: -1.4em;
-                z-index: 1;
-            }
+            width: 50%;
             &__slider{
                 position: relative;
                 &__controller{
@@ -131,37 +113,42 @@
                 }
             }
             &__info{
-                position: relative;
-                background-color: rgb(255, 255, 255);
-                width: 90%;
-                margin: -1.5em auto 0 auto;
-                padding: 1.2em;
+                text-align: left;
                 &__title{
-                    font-family: "Old Standard TT", serif;
                     font-weight: 400;
-                    font-size: 1.75rem;
-                    line-height: 2.25rem;
-                    letter-spacing: -0.0625rem;
+                    font-size: 2.25rem;
+                    width: 70%;
                 }
                 &__description{
-                    color: #777777;
-                    font-family: "Roboto", sans;
-                    font-weight: 400;
-                    font-size: 0.875rem;
-                    line-height: 1.375rem;
-                    margin: 1em auto;
+                    width: 70%;
+                    margin: 1em 0;
                 }
                 &__price{
-                    color: #BDAC8D;
-                    font-family: "Archivo", sans-serif;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    line-height: 2.6875rem;
-                    &--little{
-                        font-size: 0.8125rem;
-                    }
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 1em;
                 }
             }
         }
     }
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: '';
+    display: none;
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .9em 1em;
+    cursor: pointer;
+}
+.swiper-button-prev{
+    left: 1em;
+    background-color: #FFFFFF;
+}
+.swiper-button-next {
+    right: 1em;
+    background-color: #BDAC8D;
 }
