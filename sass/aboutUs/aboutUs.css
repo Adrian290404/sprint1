@@ -131,22 +131,6 @@ body {
   width: 100%;
   height: auto;
 }
-.about-us__counter__slider__buttons {
-  display: flex;
-  justify-content: center;
-  gap: 0.5em;
-  margin-top: 1em;
-}
-.about-us__counter__slider__buttons__button {
-  cursor: pointer;
-  background-color: grey;
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-}
-.about-us__counter__slider__buttons__button--active {
-  background-color: #BEAD8E;
-}
 @media only screen and (min-width: 1000px) {
   .about-us__counter {
     padding: 4em 1em 2em 1em;
@@ -177,11 +161,40 @@ body {
     width: 100%;
     height: auto;
   }
-  .about-us__counter__slider__buttons {
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #AD9D82 !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-us__counter__slider {
+    display: block;
+  }
+  .about-us__counter__slider .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .about-us__counter__slider .swiper-slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+  }
+  .swiper-pagination {
     display: none;
   }
 }
-
 .about-us__facilities {
   background-color: #222222;
   color: #FFFFFF;

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/aboutUs/facilitiesSwiper.js" defer></script>
+    <script src="../js/aboutUs/factsSwiper.js" defer></script>
 </head>
 <body>
     <div id="header"></div>
@@ -153,17 +154,16 @@
                     <img class="about-us__counter__facts-container__fact__arrow" src="../img/about/icons/arrow.png">
                 </div>
             </article>
-            <article class="about-us__counter__slider">
-                <div class="about-us__counter__slider__image-container">
-                    <img class="about-us__counter__slider__image-container__image" src="../img/about/empty/rectangle.png" alt="Slide 1">
+            <article class="about-us__counter__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="about-us__counter__slider__image" src="../img/about/empty/rectangle.png" alt="Imagen 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="about-us__counter__slider__image" src="../img/about/empty/rectangle.png" alt="Imagen 1">
+                    </div>
                 </div>
-                <div class="about-us__counter__slider__image-container">
-                    <img class="about-us__counter__slider__image-container__image" src="../img/about/empty/rectangle.png" alt="Slide 2">
-                </div>
-                <div class="about-us__counter__slider__buttons">
-                    <div class="about-us__counter__slider__buttons__button about-us__counter__slider__buttons__button--active"></div>
-                    <div class="about-us__counter__slider__buttons__button"></div>
-                </div>
+                <div class="swiper-pagination"></div>
             </article>
         </section>
     </main>
