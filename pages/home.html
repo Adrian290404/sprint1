@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/home/roomsSwiper.js" defer></script>
+    <script src="../js/home/facilitiesSwiper.js" defer></script>
 </head>
 <body>
     <div id="header"></div>
@@ -147,22 +148,61 @@
             <button class="home__intro-video__button">BOOK NOW</button>
         </section>
         <section class="home__facilities">
-                <h2 class="home__facilities__up">FACILITIES</h2>
-                <h1 class="home__facilities__title">Core Features</h1>
-                <article class="home__facilities__container">
-                    <p class="home__facilities__container__number">01</p>
-                    <img class="home__facilities__container__icon" src="../img/home/icons/rating.png">
-                    <h3 class="home__facilities__container__title">Have High Rating</h3>
-                    <p class="home__facilities__container__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </article>
-                <div class="home__facilities__buttons">
-                    <img class="home__facilities__buttons__button home__facilities__buttons__button--active" src="../img/home/icons/circleActive.png">
-                    <img class="home__facilities__buttons__button" src="../img/home/icons/circle.png">
-                    <img class="home__facilities__buttons__button" src="../img/home/icons/circle.png">
-                    <img class="home__facilities__buttons__button" src="../img/home/icons/circle.png">
-                    <img class="home__facilities__buttons__button" src="../img/home/icons/circle.png">
-                    <img class="home__facilities__buttons__button" src="../img/home/icons/circle.png">
+            <h2 class="home__facilities__up">FACILITIES</h2>
+            <h1 class="home__facilities__title">Core Features</h1>
+            <div class="swiper home__facilities__swiper">
+                <div class="swiper-wrapper home__facilities__container">
+                    <div class="swiper-slide home__facilities__container__content home__facilities__container__content--first">
+                        <p class="home__facilities__container__content__number">01</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/rating.png" alt="Rating">
+                        <h3 class="home__facilities__container__content__title">Have High Rating</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide home__facilities__container__content">
+                        <p class="home__facilities__container__content__number">02</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/hours.png" alt="Hours">
+                        <h3 class="home__facilities__container__content__title">Quiet Hours</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide home__facilities__container__content">
+                        <p class="home__facilities__container__content__number">03</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/location.png" alt="Location">
+                        <h3 class="home__facilities__container__content__title">Best Locations</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide home__facilities__container__content">
+                        <p class="home__facilities__container__content__number">04</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/cancellation.png" alt="Cancellation">
+                        <h3 class="home__facilities__container__content__title">Free Cancellation</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide home__facilities__container__content">
+                        <p class="home__facilities__container__content__number">05</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/payment.png" alt="Payment">
+                        <h3 class="home__facilities__container__content__title">Payment Options</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    <div class="swiper-slide home__facilities__container__content">
+                        <p class="home__facilities__container__content__number">06</p>
+                        <img class="home__facilities__container__content__icon" src="../img/home/icons/offers.png" alt="Offers">
+                        <h3 class="home__facilities__container__content__title">Special Offers</h3>
+                        <p class="home__facilities__container__content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
         <section class="home__menu">
             <img class="home__menu__icon" src="../img/home/icons/food.png">

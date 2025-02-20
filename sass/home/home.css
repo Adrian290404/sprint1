@@ -297,11 +297,11 @@ body {
   letter-spacing: -0.0625rem;
   margin: 0.4em 0;
 }
-.home__facilities__container {
+.home__facilities__container__content {
   text-align: left;
   padding: 0 1em;
 }
-.home__facilities__container__number {
+.home__facilities__container__content__number {
   color: rgba(34, 34, 34, 0.0392156863);
   font-family: "Archivo", sans-serif;
   font-size: 7.5rem;
@@ -309,18 +309,20 @@ body {
   font-weight: 700;
   text-align: right;
 }
-.home__facilities__container__icon {
+.home__facilities__container__content__icon {
+  width: 60px;
+  height: 60px;
   display: block;
   margin: -2.5em auto 3em 0;
 }
-.home__facilities__container__title {
+.home__facilities__container__content__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 1.875rem;
   letter-spacing: -0.9px;
 }
-.home__facilities__container__description {
+.home__facilities__container__content__description {
   color: #777777;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -329,12 +331,36 @@ body {
   width: 80%;
   margin: 2em 0;
 }
-.home__facilities__buttons {
-  text-align: center;
+@media only screen and (min-width: 1000px) {
+  .home__facilities__title {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -0.125rem;
+  }
+  .home__facilities__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    max-width: 85em;
+    margin: 0 auto;
+  }
+  .home__facilities__container__content {
+    max-width: 25em;
+    flex: 1 1 25em;
+    box-sizing: border-box;
+    display: block;
+  }
 }
-.home__facilities__buttons__button {
-  margin: 0 0.1em;
-  cursor: pointer;
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #AD9D82 !important;
 }
 
 .home__information {

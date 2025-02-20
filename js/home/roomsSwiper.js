@@ -1,4 +1,4 @@
-let swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.home__rooms__container', {
     loop: true, 
     navigation: {
         nextEl: '.swiper-button-next',
