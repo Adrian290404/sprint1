@@ -85,7 +85,7 @@
         width: 69%;
         margin: 0 auto;
         &__line{
-            width: 70%;
+            width: calc(70% - 3em);
         }
         &__content{
             display: flex;

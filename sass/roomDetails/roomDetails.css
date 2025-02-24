@@ -155,7 +155,7 @@ body {
     margin: 0 auto;
   }
   .room-details__amenities__line {
-    width: 70%;
+    width: calc(70% - 3em);
   }
   .room-details__amenities__content {
     display: flex;
@@ -324,6 +324,18 @@ body {
   font-family: "Roboto", sans;
   font-weight: 400;
   font-size: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .room-details__cancellation {
+    width: 69%;
+    margin: 0 auto;
+  }
+  .room-details__cancellation__line {
+    width: calc(70% - 3em);
+  }
+  .room-details__cancellation__description {
+    width: calc(70% - 1em);
+  }
 }
 
 .room-details__related-rooms {
