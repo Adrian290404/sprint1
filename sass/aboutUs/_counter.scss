@@ -82,7 +82,10 @@
         }
         &__slider {
             display: flex;
-            gap: 2em;
+            .swiper-wrapper{
+                justify-content: center;
+                gap: .5em;
+            }
             &__image-container {
                 flex: 1;
                 &__image {
