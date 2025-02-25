@@ -13,65 +13,99 @@
         margin: 1em 0 2em 0;
     }
     &__container{
-        text-align: center;
-        &__slider{
-            position: relative;
-            &__image{
-                width: 100%;
-            }
-            &__controller{
-                position: absolute;
-                border: 2px solid #22222254;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: .9em 1em;
-                cursor: pointer;
-                &--left{
-                    left: -.3em;
-                    background-color: #FFFFFF;
-                }
-                &--right{
-                    right: -.3em;
-                    background-color: #BDAC8D;
-                }
-            }
-        }
         &__icons{
             position: relative;
             padding: .6em 1.8em;
             background-color: white;
-            margin-top: -1.4em;
             z-index: 1;
+            display: block;
+            margin: 0 auto -1.4em auto;
         }
-        &__title{
-            font-family: "Old Standard TT", serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            letter-spacing: -0.72px;
-            margin: 1em 0;
-        }
-        &__description{
-            color: #777777;
-            font-family: "Roboto", sans;
-            font-weight: 400;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            width: 90%;
-            margin: 0 auto 1em auto;
-        }
-        &__details{
-            font-family: "Archivo", sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.0625rem;
-            &--price{
-                color: #BEAD8E;
+        &__slider{
+            position: relative;
+            &__image{
+                width: 100%;
+                height: auto;
             }
-            &--booking{
-                color: #BDBDBD;
-                margin-left: 1em;
+        }
+        &__info{
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            margin: -1.5em auto 0 auto;
+            padding: 1.2em;
+            text-align: center;
+            &__title{
+                font-family: "Old Standard TT", serif;
+                font-weight: 400;
+                font-size: 1.75rem;
+                line-height: 2.25rem;
+                letter-spacing: -0.0625rem;
+            }
+            &__description{
+                color: #777777;
+                font-family: "Roboto", sans;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                margin: 1em auto;
+            }
+            &__details{
+                font-family: "Archivo", sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.0625rem;
+                &--price{
+                    color: #BEAD8E;
+                }
+                &--booking{
+                    color: #BDBDBD;
+                    margin-left: 1em;
+                }
             }
         }
     }
+    @media only screen and (min-width: 1000px) {
+        width: 69%;
+        margin: 0 auto;
+        &__line{
+            width: calc(70% - 3em);
+        }
+        &__description{
+            width: calc(70% - 1em);
+        }
+        &__container{
+            text-align: start;
+            .swiper-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2em;
+            }
+            .swiper-slide {
+                width: 33%;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
+    }
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: '';
+    display: none;
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .9em 1em;
+    cursor: pointer;
+}
+.swiper-button-prev{
+    left: 1em;
+    background-color: #FFFFFF;
+}
+.swiper-button-next {
+    right: 1em;
+    background-color: #BDAC8D;
 }

@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/roomDetails/relatedRoomsSwiper.js" defer></script>
 </head>
 <body>
     <div id="header"></div>
@@ -94,17 +97,42 @@
         <section class="room-details__related-rooms">
             <h2 class="room-details__related-rooms__title">Related Rooms</h2>
             <hr class="room-details__related-rooms__line">
-            <article class="room-details__related-rooms__container">
-                <div class="room-details__related-rooms__container__slider">
-                    <img class="room-details__related-rooms__container__slider__controller room-details__related-rooms__container__slider__controller--left" src="../img/home/icons/left.png">
-                    <img class="room-details__related-rooms__container__slider__controller room-details__related-rooms__container__slider__controller--right" src="../img/home/icons/right.png">
-                    <img class="room-details__related-rooms__container__slider__image" src="../img/home/empty/horizontalRectangle.png">
+            <div class="swiper room-details__related-rooms__container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="room-details__related-rooms__container__icons" src="../img/home/icons/roomIcons.png" alt="Iconos de Room">
+                        <div class="room-details__related-rooms__container__slider">
+                            <img class="room-details__related-rooms__container__slider__image" src="../img/home/empty/horizontalRectangle.png" alt="Imagen de habitación">
+                        </div>
+                        <div class="room-details__related-rooms__container__info">
+                            <h3 class="room-details__related-rooms__container__info__title">Minimal Duplex Room</h3>
+                            <p class="room-details__related-rooms__container__info__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <p class="room-details__related-rooms__container__info__details room-details__related-rooms__container__info__details--price">$345/Night<span class="room-details__related-rooms__container__info__details room-details__related-rooms__container__info__details--booking">Booking Now</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="room-details__related-rooms__container__icons" src="../img/home/icons/roomIcons.png" alt="Iconos de Room">
+                        <div class="room-details__related-rooms__container__slider">
+                            <img class="room-details__related-rooms__container__slider__image" src="../img/home/empty/horizontalRectangle.png" alt="Imagen de habitación">
+                        </div>
+                        <div class="room-details__related-rooms__container__info">
+                            <h3 class="room-details__related-rooms__container__info__title">Luxury Suite</h3>
+                            <p class="room-details__related-rooms__container__info__description">
+                                Habitación de lujo con acabados modernos y confort inigualable.
+                            </p>
+                            <p class="room-details__related-rooms__container__info__details room-details__related-rooms__container__info__details--price">$345/Night<span class="room-details__related-rooms__container__info__details room-details__related-rooms__container__info__details--booking">Booking Now</span></p>
+                        </div>
+                    </div>
                 </div>
-                <img class="room-details__related-rooms__container__icons" src="../img/home/icons/roomIcons.png">
-                <h3 class="room-details__related-rooms__container__title">Minimal Duplex Room</h3>
-                <p class="room-details__related-rooms__container__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                <p class="room-details__related-rooms__container__details room-details__related-rooms__container__details--price">$345/Night<span class="room-details__related-rooms__container__details room-details__related-rooms__container__details--booking">Booking Now</span></p>
-            </article>
+                <div class="swiper-button-prev">
+                    <img src="../img/home/icons/left.png" alt="Anterior">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="../img/home/icons/right.png" alt="Siguiente">
+                </div>
+            </div>
         </section>
     </main>
 
